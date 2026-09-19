@@ -3,7 +3,8 @@
   "shortName": "S&F 88",
   "established": "1988",
   "tagline": "BRANDED STOCK. FOUND DIFFERENTLY.",
-  "secondary": "SAME BRANDS. A DIFFERENT ROUTE.",
+  "secondary": "NON CERCHI UN ALTRO CAPO. STAI CERCANDO QUELLO GIUSTO.",
+  "brandStory": "DAL MERCATO AL TUO GUARDAROBA.",
   "currency": "EUR",
   "country": "IT",
   "categories": [
@@ -13,5 +14,11 @@
     "Shoes",
     "Accessories"
   ],
+  "features": [
+    "New Drop",
+    "Last Piece",
+    "Selected Stock"
+  ],
+  "marketToOnline": true,
   "status": "concept-demo"
 }
