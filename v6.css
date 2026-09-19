@@ -1,0 +1,37 @@
+
+/* STOCK & FOUND 88 — V6 REAL STORE */
+.v6-finder{padding:clamp(80px,11vw,155px) 0;background:#ebe9e3}
+.v6-finder .line{border-color:#c9c5bd}
+.v6-finder-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:8vw;margin-top:48px;align-items:end}
+.v6-finder h2{font-size:clamp(62px,9vw,145px);line-height:.74;letter-spacing:-.09em;margin:0}
+.v6-finder h2 em{font-style:normal;color:#77736d}
+.v6-finder-copy p{font-size:clamp(18px,2vw,25px);line-height:1.04;max-width:500px;color:#55514b}
+.v6-finder-form{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:32px}
+.v6-finder-form label{font:8px 'DM Mono',monospace;letter-spacing:.12em}
+.v6-finder-form select,.v6-finder-form input{width:100%;margin-top:8px;border:0;border-bottom:1px solid #aaa69f;background:transparent;padding:13px 0;outline:0;color:#0d0d0d}
+.v6-finder-form .full{grid-column:1/-1}
+.v6-finder-result{margin-top:28px;font:9px 'DM Mono',monospace;letter-spacing:.1em;color:#77736d;min-height:16px}
+.v6-finder .btn{margin-top:18px}
+.v6-huntband{background:#0d0d0d;color:#fff;padding:clamp(80px,10vw,145px) 0}
+.v6-hunt-grid{display:grid;grid-template-columns:1fr 1fr;gap:8vw;align-items:end}
+.v6-hunt-grid h2{font-size:clamp(60px,8vw,130px);line-height:.75;letter-spacing:-.085em;margin:25px 0 0}
+.v6-hunt-grid h2 em{font-style:normal;color:#77736d}
+.v6-hunt-grid p{font-size:20px;line-height:1.05;color:#aaa69f;max-width:500px}
+.v6-status{font:8px 'DM Mono',monospace;letter-spacing:.1em;margin-top:9px;color:#77736d}
+.v6-card-stock{display:flex;justify-content:space-between;gap:10px;align-items:center}
+.v6-card-stock .v6-status{margin:0}
+.v6-real-store-note{font:8px 'DM Mono',monospace;letter-spacing:.1em;color:#77736d;margin-top:20px}
+.v6-newsletter-clean small{display:none!important}
+.mobile-menu .v6-finder-link{border-top:1px solid rgba(0,0,0,.12);margin-top:8px;padding-top:24px}
+@media(max-width:900px){
+ .v6-finder-grid,.v6-hunt-grid{grid-template-columns:1fr;gap:45px}
+ .v6-finder-form{grid-template-columns:1fr 1fr}
+}
+@media(max-width:600px){
+ .v6-finder{padding:75px 0}
+ .v6-finder-grid{margin-top:35px}
+ .v6-finder-form{grid-template-columns:1fr}
+ .v6-finder-form .full{grid-column:auto}
+ .v6-finder h2{font-size:clamp(58px,18vw,94px)}
+ .v6-hunt-grid h2{font-size:clamp(58px,17vw,94px)}
+}
