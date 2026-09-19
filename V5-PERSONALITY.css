@@ -1,0 +1,53 @@
+/* V5 — PERSONALITY / HUNT LANGUAGE */
+:root{
+  --hunt-red:#c43b2f;
+}
+body:after{
+  content:'';
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  z-index:9999;
+  border:0 solid transparent;
+}
+.hero .hero-tag,
+.badge{
+  text-transform:uppercase;
+}
+.hero .hero-tag:before{
+  content:'FOUND / ';
+  opacity:.55;
+}
+.discovery-grid a:nth-child(2) b em{
+  color:var(--hunt-red);
+}
+.discovery-grid a:hover b em{
+  color:#aaa69f;
+}
+.card .badge{
+  letter-spacing:.12em;
+}
+.card:hover .badge{
+  background:#0d0d0d;
+  color:#fff;
+}
+.product-info .add{
+  text-transform:uppercase;
+}
+.newsletter{
+  position:relative;
+  overflow:hidden;
+}
+.newsletter:after{
+  content:'KEEP LOOKING.';
+  position:absolute;
+  right:-20px;
+  bottom:-35px;
+  font:900 clamp(100px,16vw,260px)/.7 Inter,sans-serif;
+  letter-spacing:-.1em;
+  color:rgba(255,255,255,.035);
+  pointer-events:none;
+}
+@media(max-width:600px){
+  .newsletter:after{font-size:110px;right:-8px;bottom:-5px}
+}

@@ -1,18 +1,16 @@
-# STOCK & FOUND 88 — V4 Store Home
+# STOCK & FOUND 88 — V5 Personality
 
-This patch brings the key storefront/home features of the Flip&Co experience into the Stock & Found 88 identity.
+Adds a personality layer without rebuilding the commerce engine.
 
-Added:
-- richer home commerce architecture
-- New Find / Last Pieces / Under €50 / The Edit discovery routes
-- dynamic brand wall from products.json
-- global search overlay
-- expanded desktop/mobile navigation
-- product discovery links
-- newsletter capture UI (provider still needs connecting before go-live)
-- cart remains local/demo
-- V4 cache version 88.4
+Core voice:
+- WE GO LOOKING. YOU FIND.
+- JUST FOUND.
+- ALMOST GONE.
+- THE HUNT.
+- I'LL TAKE IT.
+- KEEP LOOKING.
+- CLAIM MY FIND.
 
-Important:
-- This is a front-end/demo commerce layer.
-- Payment, order persistence, email automation and real stock synchronization are still not live.
+The layer changes customer-facing language across home, navigation, discovery cards, product, cart, checkout and footer while preserving the existing data/commerce architecture.
+
+This is a front-end personality layer. Payment, real stock synchronization, order persistence and email provider remain separate go-live work.
