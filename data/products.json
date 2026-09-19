@@ -1,0 +1,110 @@
+{
+  "products": [
+    {
+      "id": "STK-0001",
+      "brand": "SELECTED STOCK",
+      "name": "Heavyweight Overshirt",
+      "category": "Men",
+      "price": 49,
+      "compareAt": 89,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "badge": "NEW DROP",
+      "image": "https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=1000&q=85",
+      "description": "Structured everyday overshirt from the current stock selection.",
+      "status": "DEMO"
+    },
+    {
+      "id": "STK-0002",
+      "brand": "SELECTED STOCK",
+      "name": "Essential Hoodie",
+      "category": "Men",
+      "price": 39,
+      "compareAt": 79,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "badge": "LAST PIECE",
+      "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=1000&q=85",
+      "description": "Clean heavyweight hoodie selected for the core edit.",
+      "status": "DEMO"
+    },
+    {
+      "id": "STK-0003",
+      "brand": "SELECTED STOCK",
+      "name": "Tailored Wide Trouser",
+      "category": "Women",
+      "price": 45,
+      "compareAt": 95,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "badge": "NEW DROP",
+      "image": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=1000&q=85",
+      "description": "Relaxed tailoring with an editorial silhouette.",
+      "status": "DEMO"
+    },
+    {
+      "id": "STK-0004",
+      "brand": "SELECTED STOCK",
+      "name": "Logo Crewneck",
+      "category": "Women",
+      "price": 35,
+      "compareAt": 75,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "badge": "LAST PIECE",
+      "image": "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=1000&q=85",
+      "description": "Minimal branded-style crewneck for the daily rotation.",
+      "status": "DEMO"
+    },
+    {
+      "id": "STK-0005",
+      "brand": "SELECTED STOCK",
+      "name": "Retro Runner",
+      "category": "Shoes",
+      "price": 59,
+      "compareAt": 120,
+      "sizes": [
+        "40",
+        "41",
+        "42",
+        "43",
+        "44"
+      ],
+      "badge": "NEW DROP",
+      "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1000&q=85",
+      "description": "Low-profile runner with a vintage sport attitude.",
+      "status": "DEMO"
+    },
+    {
+      "id": "STK-0006",
+      "brand": "SELECTED STOCK",
+      "name": "Compact Shoulder Bag",
+      "category": "Accessories",
+      "price": 29,
+      "compareAt": 65,
+      "sizes": [
+        "ONE SIZE"
+      ],
+      "badge": "LAST PIECE",
+      "image": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1000&q=85",
+      "description": "Compact everyday bag from the accessories edit.",
+      "status": "DEMO"
+    }
+  ]
+}

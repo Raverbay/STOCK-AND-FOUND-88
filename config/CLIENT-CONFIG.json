@@ -1,0 +1,6 @@
+{
+  "brand": {"display_name":"STOCK & FOUND 88","tagline":"BRANDED STOCK. FOUND DIFFERENTLY.","secondary":"SAME BRANDS. A DIFFERENT ROUTE.","established":"1988"},
+  "visual":{"black":"#0D0D0D","offWhite":"#F4F4F0","warmGrey":"#A7A39B","font":"Inter + DM Mono"},
+  "commerce":{"payment_live":false,"checkout_mode":"order_request","inventory_status":"demo"},
+  "mediaBay":{"powered_by":"MediaBay.it"}
+}

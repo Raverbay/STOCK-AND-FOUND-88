@@ -1,0 +1,17 @@
+{
+  "name": "STOCK & FOUND 88",
+  "shortName": "S&F 88",
+  "established": "1988",
+  "tagline": "BRANDED STOCK. FOUND DIFFERENTLY.",
+  "secondary": "SAME BRANDS. A DIFFERENT ROUTE.",
+  "currency": "EUR",
+  "country": "IT",
+  "categories": [
+    "Men",
+    "Women",
+    "Kids",
+    "Shoes",
+    "Accessories"
+  ],
+  "status": "concept-demo"
+}
