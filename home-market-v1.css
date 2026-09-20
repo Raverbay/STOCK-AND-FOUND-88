@@ -1,0 +1,529 @@
+
+/* STOCK & FOUND MARKET — HOME OPTIMIZATION V1
+   Final art-direction layer for the current storefront.
+*/
+
+:root{
+  --sfm-black:#080808;
+  --sfm-paper:#f3f2ed;
+  --sfm-acid:#d8ff32;
+  --sfm-line:#cbc9c1;
+  --sfm-muted:#77756e;
+}
+
+html,body{
+  width:100%!important;
+  max-width:100%!important;
+  overflow-x:hidden!important;
+  background:var(--sfm-paper)!important;
+}
+
+body.sfm-home{
+  color:var(--sfm-black)!important;
+}
+
+/* ---------- HEADER / BRAND ---------- */
+
+body.sfm-home #header,
+body.sfm-home header{
+  width:100%!important;
+}
+
+body.sfm-home .logo,
+body.sfm-home .site-logo,
+body.sfm-home .brand{
+  letter-spacing:-.075em!important;
+}
+
+body.sfm-home .logo::after,
+body.sfm-home .site-logo::after{
+  content:"MARKET";
+  display:block;
+  margin-top:2px;
+  font:900 9px/1 "DM Mono",monospace;
+  letter-spacing:.18em;
+}
+
+/* ---------- HERO ---------- */
+
+body.sfm-home .hero{
+  width:100%!important;
+  min-height:min(760px,calc(100svh - 150px))!important;
+  background:var(--sfm-black)!important;
+  color:var(--sfm-paper)!important;
+  position:relative!important;
+  overflow:hidden!important;
+}
+
+body.sfm-home .hero::before{
+  content:"S&F MARKET / 88";
+  position:absolute;
+  z-index:10;
+  top:22px;
+  left:20px;
+  font:900 9px/1 "DM Mono",monospace;
+  letter-spacing:.14em;
+  color:var(--sfm-acid);
+}
+
+body.sfm-home .hero::after{
+  content:"BRANDED STOCK · FOUND DIFFERENTLY";
+  position:absolute;
+  z-index:10;
+  right:20px;
+  bottom:22px;
+  font:900 8px/1 "DM Mono",monospace;
+  letter-spacing:.12em;
+  color:rgba(243,242,237,.65);
+}
+
+body.sfm-home .hero-copy{
+  min-width:0!important;
+  width:100%!important;
+  box-sizing:border-box!important;
+  padding:clamp(100px,12vw,170px) 20px 70px!important;
+}
+
+body.sfm-home .hero-copy::before{
+  content:"THE MARKET HAS NO ALGORITHM.";
+  display:inline-block;
+  background:var(--sfm-acid);
+  color:#000;
+  padding:7px 9px;
+  margin-bottom:25px;
+  font:900 9px/1 "DM Mono",monospace;
+  letter-spacing:.08em;
+  transform:rotate(-1deg);
+}
+
+body.sfm-home .hero-copy p{
+  max-width:1100px!important;
+  margin:0!important;
+  font-size:clamp(55px,9vw,145px)!important;
+  line-height:.78!important;
+  letter-spacing:-.085em!important;
+  font-weight:900!important;
+  text-transform:uppercase!important;
+}
+
+body.sfm-home .hero-copy p strong{
+  color:var(--sfm-acid)!important;
+  font-weight:900!important;
+}
+
+body.sfm-home .hero-tag{
+  margin-top:28px!important;
+  font:900 9px/1.35 "DM Mono",monospace!important;
+  letter-spacing:.12em!important;
+  color:#aaa89f!important;
+}
+
+body.sfm-home .hero-bottom{
+  margin-top:38px!important;
+}
+
+body.sfm-home .hero-bottom .btn{
+  background:var(--sfm-acid)!important;
+  color:#000!important;
+  border:0!important;
+  min-height:52px!important;
+  padding:0 22px!important;
+  font-weight:900!important;
+}
+
+/* If the old hero has a stray empty white button/block, hide it */
+body.sfm-home .hero .btn:empty{
+  display:none!important;
+}
+
+/* ---------- MARKET PULSE ---------- */
+
+body.sfm-home .market-pulse{
+  width:100%!important;
+  box-sizing:border-box!important;
+  background:var(--sfm-acid)!important;
+  color:#000!important;
+  border:0!important;
+  overflow:hidden!important;
+}
+
+body.sfm-home .market-pulse *{
+  color:#000!important;
+}
+
+/* ---------- HOME SECTION HEADERS ---------- */
+
+body.sfm-home .market-intro,
+body.sfm-home .categories,
+body.sfm-home .brand-wall,
+body.sfm-home .split,
+body.sfm-home .closing,
+body.sfm-home .newsletter{
+  width:100%!important;
+  max-width:none!important;
+  box-sizing:border-box!important;
+  overflow:hidden!important;
+}
+
+body.sfm-home .market-intro{
+  padding-top:clamp(70px,9vw,120px)!important;
+  padding-bottom:clamp(35px,5vw,65px)!important;
+}
+
+body.sfm-home .market-intro::before{
+  content:"01 / TODAY AT THE MARKET";
+  display:block;
+  margin-bottom:22px;
+  font:900 9px/1 "DM Mono",monospace;
+  letter-spacing:.14em;
+  color:var(--sfm-muted);
+}
+
+/* ---------- FEATURED / MARKET STALL ---------- */
+
+body.sfm-home #featured{
+  width:100%!important;
+  box-sizing:border-box!important;
+}
+
+body.sfm-home .market-table,
+body.sfm-home .market-stall{
+  width:100%!important;
+  max-width:none!important;
+  box-sizing:border-box!important;
+}
+
+body.sfm-home .market-stall{
+  border-top:1px solid var(--sfm-line)!important;
+  border-bottom:1px solid var(--sfm-line)!important;
+}
+
+/* ---------- CATEGORIES ---------- */
+
+body.sfm-home .categories{
+  padding:clamp(75px,10vw,135px) 20px!important;
+  background:var(--sfm-paper)!important;
+}
+
+body.sfm-home .categories::before{
+  content:"04 / THE TERRITORY";
+  display:block;
+  margin-bottom:25px;
+  font:900 9px/1 "DM Mono",monospace;
+  letter-spacing:.14em;
+  color:var(--sfm-muted);
+}
+
+body.sfm-home .categories::after{
+  content:"WALK THE MARKET ↗";
+  position:absolute;
+  right:20px;
+  top:clamp(75px,10vw,135px);
+  font:900 9px/1 "DM Mono",monospace;
+  letter-spacing:.12em;
+  color:var(--sfm-muted);
+}
+
+body.sfm-home .categories .category-grid,
+body.sfm-home .categories .categories-grid{
+  width:100%!important;
+  max-width:none!important;
+}
+
+/* ---------- BRANDS ---------- */
+
+body.sfm-home .brand-wall{
+  padding:0 20px clamp(80px,10vw,130px)!important;
+}
+
+body.sfm-home .brand-wall::before{
+  content:"05 / LABELS WE FOUND";
+  display:block;
+  margin-bottom:25px;
+  font:900 9px/1 "DM Mono",monospace;
+  letter-spacing:.14em;
+  color:var(--sfm-muted);
+}
+
+body.sfm-home .brand-wall::after{
+  content:"SELECTED / NOT RANDOM";
+  position:absolute;
+  right:20px;
+  top:0;
+  font:900 9px/1 "DM Mono",monospace;
+  letter-spacing:.12em;
+  color:var(--sfm-muted);
+}
+
+body.sfm-home .brand-grid{
+  width:100%!important;
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  gap:0!important;
+  border-top:1px solid var(--sfm-line)!important;
+  border-left:1px solid var(--sfm-line)!important;
+}
+
+body.sfm-home .brand-grid a{
+  min-width:0!important;
+  min-height:clamp(170px,23vw,320px)!important;
+  padding:18px!important;
+  border-right:1px solid var(--sfm-line)!important;
+  border-bottom:1px solid var(--sfm-line)!important;
+  box-sizing:border-box!important;
+  position:relative!important;
+}
+
+body.sfm-home .brand-grid a:nth-child(1){
+  background:#111!important;
+  color:#fff!important;
+}
+
+body.sfm-home .brand-grid a:nth-child(2){
+  background:var(--sfm-acid)!important;
+  color:#000!important;
+  transform:translateY(12px);
+}
+
+body.sfm-home .brand-grid a:nth-child(3){
+  transform:translateY(-10px);
+}
+
+body.sfm-home .brand-grid a::after{
+  content:"↗";
+  position:absolute;
+  left:18px;
+  bottom:16px;
+  font:18px/1 Arial,sans-serif;
+}
+
+/* ---------- STORY / MARKET ---------- */
+
+body.sfm-home .split{
+  background:var(--sfm-black)!important;
+  color:var(--sfm-paper)!important;
+  border:0!important;
+  position:relative!important;
+}
+
+body.sfm-home .split::before{
+  content:"06 / THE PHYSICAL MARKET";
+  position:absolute;
+  z-index:6;
+  top:24px;
+  left:20px;
+  font:900 9px/1 "DM Mono",monospace;
+  letter-spacing:.14em;
+  color:var(--sfm-acid);
+}
+
+body.sfm-home .split .copy{
+  min-width:0!important;
+  padding:clamp(95px,11vw,150px) clamp(20px,5vw,80px) clamp(65px,8vw,100px)!important;
+}
+
+body.sfm-home .split .copy h2{
+  font-size:clamp(58px,8vw,125px)!important;
+  line-height:.78!important;
+  letter-spacing:-.08em!important;
+  font-weight:900!important;
+  margin-bottom:25px!important;
+}
+
+body.sfm-home .split .copy h2 em{
+  color:var(--sfm-acid)!important;
+  font-style:normal!important;
+}
+
+body.sfm-home .split .copy p{
+  max-width:430px!important;
+  color:#bbb9b1!important;
+}
+
+body.sfm-home .split .stamp{
+  color:var(--sfm-acid)!important;
+}
+
+body.sfm-home .split > :not(.copy){
+  min-width:0!important;
+  position:relative!important;
+}
+
+body.sfm-home .split > :not(.copy)::before{
+  content:"MARKET → ONLINE";
+  position:absolute;
+  z-index:5;
+  top:15px;
+  left:15px;
+  padding:6px 8px;
+  background:var(--sfm-paper);
+  color:#000;
+  font:900 8px/1 "DM Mono",monospace;
+  letter-spacing:.1em;
+}
+
+/* ---------- CLOSING ---------- */
+
+body.sfm-home .closing{
+  background:var(--sfm-acid)!important;
+  color:#000!important;
+  padding:clamp(85px,12vw,170px) 20px!important;
+}
+
+body.sfm-home .closing::before{
+  content:"07 / THE FIND";
+  position:absolute;
+  top:24px;
+  left:20px;
+  font:900 9px/1 "DM Mono",monospace;
+  letter-spacing:.14em;
+  color:#000!important;
+}
+
+body.sfm-home .closing h2{
+  font-size:clamp(58px,10vw,155px)!important;
+  line-height:.78!important;
+  letter-spacing:-.085em!important;
+  font-weight:900!important;
+}
+
+body.sfm-home .closing h2 em{
+  color:transparent!important;
+  -webkit-text-stroke:2px #000!important;
+  font-style:normal!important;
+}
+
+body.sfm-home .closing .btn{
+  background:#000!important;
+  color:var(--sfm-acid)!important;
+  border:0!important;
+}
+
+/* ---------- NEWSLETTER ---------- */
+
+body.sfm-home .newsletter{
+  padding:clamp(75px,9vw,125px) 20px!important;
+}
+
+body.sfm-home .newsletter::before{
+  content:"08 / FIND LIST";
+  display:block;
+  margin-bottom:24px;
+  font:900 9px/1 "DM Mono",monospace;
+  letter-spacing:.14em;
+  color:var(--sfm-muted);
+}
+
+body.sfm-home .newsletter h2{
+  font-size:clamp(50px,7vw,105px)!important;
+  line-height:.8!important;
+  letter-spacing:-.075em!important;
+}
+
+/* ---------- MOBILE ---------- */
+
+@media(max-width:900px){
+  body.sfm-home main,
+  body.sfm-home main>section{
+    width:100%!important;
+    max-width:100%!important;
+    margin-left:0!important;
+    margin-right:0!important;
+    box-sizing:border-box!important;
+  }
+
+  body.sfm-home .hero{
+    min-height:calc(100svh - 190px)!important;
+  }
+
+  body.sfm-home .hero-copy{
+    padding:90px 20px 75px!important;
+  }
+
+  body.sfm-home .hero-copy p{
+    font-size:clamp(54px,16vw,82px)!important;
+    line-height:.78!important;
+  }
+
+  body.sfm-home .hero::after{
+    right:14px;
+    bottom:18px;
+    max-width:44%;
+    text-align:right;
+    line-height:1.3;
+  }
+
+  body.sfm-home .categories::after{
+    position:static!important;
+    display:block;
+    margin-top:10px;
+  }
+
+  body.sfm-home .brand-grid{
+    grid-template-columns:1fr!important;
+  }
+
+  body.sfm-home .brand-grid a{
+    min-height:140px!important;
+  }
+
+  body.sfm-home .brand-grid a:nth-child(2),
+  body.sfm-home .brand-grid a:nth-child(3){
+    transform:none!important;
+  }
+
+  body.sfm-home .split{
+    display:flex!important;
+    flex-direction:column!important;
+  }
+
+  body.sfm-home .split .copy{
+    order:1!important;
+    padding:92px 20px 55px!important;
+  }
+
+  body.sfm-home .split .copy h2{
+    font-size:clamp(58px,17vw,88px)!important;
+  }
+
+  body.sfm-home .split > :not(.copy){
+    order:2!important;
+    width:100%!important;
+    min-height:340px!important;
+    height:82vw!important;
+  }
+
+  body.sfm-home .closing h2{
+    font-size:clamp(60px,17vw,94px)!important;
+  }
+}
+
+@media(max-width:430px){
+  body.sfm-home .hero{
+    min-height:calc(100svh - 175px)!important;
+  }
+
+  body.sfm-home .hero-copy{
+    padding-top:82px!important;
+  }
+
+  body.sfm-home .hero-copy::before{
+    font-size:8px;
+    max-width:82%;
+  }
+
+  body.sfm-home .hero-copy p{
+    font-size:clamp(52px,16.5vw,76px)!important;
+  }
+
+  body.sfm-home .market-intro{
+    padding-top:62px!important;
+  }
+
+  body.sfm-home .split .copy{
+    padding-top:84px!important;
+  }
+
+  body.sfm-home .split > :not(.copy){
+    min-height:330px!important;
+  }
+}
