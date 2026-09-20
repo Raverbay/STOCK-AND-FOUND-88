@@ -1,0 +1,139 @@
+
+/* STOCK & FOUND MARKET — LOGO + HERO FIX V1 */
+
+:root{
+  --sfm-black:#080808;
+  --sfm-paper:#f3f2ed;
+  --sfm-acid:#d8ff32;
+}
+
+/* ---------- HEADER BRAND LOCKUP ---------- */
+
+body.sfm-logo-fix .site-logo,
+body.sfm-logo-fix .logo,
+body.sfm-logo-fix .brand{
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:flex-start!important;
+  justify-content:center!important;
+  gap:0!important;
+  width:max-content!important;
+  max-width:180px!important;
+  line-height:.82!important;
+  letter-spacing:-.07em!important;
+}
+
+/* Remove the old pseudo MARKET that sat below the logo. */
+body.sfm-logo-fix .logo::after,
+body.sfm-logo-fix .site-logo::after{
+  content:none!important;
+  display:none!important;
+}
+
+/* The JS creates these dedicated logo lines. */
+body.sfm-logo-fix .sfm-logo-main{
+  display:block!important;
+  font:900 28px/.76 Inter,Arial,sans-serif!important;
+  letter-spacing:-.085em!important;
+  white-space:nowrap!important;
+}
+
+body.sfm-logo-fix .sfm-logo-market{
+  display:inline-block!important;
+  align-self:flex-end!important;
+  margin-top:7px!important;
+  padding:4px 7px 3px!important;
+  background:var(--sfm-black)!important;
+  color:var(--sfm-acid)!important;
+  font:900 8px/1 "DM Mono",monospace!important;
+  letter-spacing:.16em!important;
+  text-transform:uppercase!important;
+}
+
+body.sfm-logo-fix .sfm-logo-est{
+  display:block!important;
+  margin-top:7px!important;
+  font:700 7px/1 "DM Mono",monospace!important;
+  letter-spacing:.16em!important;
+  color:#77756e!important;
+  text-transform:uppercase!important;
+}
+
+/* ---------- HERO CTA ---------- */
+
+body.sfm-logo-fix .hero-bottom{
+  display:flex!important;
+  align-items:center!important;
+  flex-wrap:wrap!important;
+  gap:12px!important;
+}
+
+body.sfm-logo-fix .hero-bottom .btn{
+  display:inline-flex!important;
+  width:auto!important;
+  min-width:0!important;
+  max-width:max-content!important;
+  height:auto!important;
+  min-height:50px!important;
+  padding:0 20px!important;
+  align-items:center!important;
+  justify-content:center!important;
+  box-sizing:border-box!important;
+  white-space:nowrap!important;
+  background:var(--sfm-acid)!important;
+  color:#000!important;
+  font:900 10px/1 "DM Mono",monospace!important;
+  letter-spacing:.08em!important;
+}
+
+body.sfm-logo-fix .hero-bottom .btn b{
+  margin-left:7px!important;
+}
+
+/* ---------- REMOVE OLD TEAL / 0088 ARTIFACT ---------- */
+
+body.sfm-logo-fix .darkband{
+  background:var(--sfm-black)!important;
+  color:var(--sfm-paper)!important;
+  border-color:transparent!important;
+}
+
+body.sfm-logo-fix .darkband::before,
+body.sfm-logo-fix .darkband::after{
+  content:none!important;
+}
+
+body.sfm-logo-fix .darkband [class*="88"],
+body.sfm-logo-fix .darkband [class*="found"]{
+  color:inherit!important;
+}
+
+/* ---------- MOBILE ---------- */
+
+@media(max-width:900px){
+  body.sfm-logo-fix .site-logo,
+  body.sfm-logo-fix .logo,
+  body.sfm-logo-fix .brand{
+    max-width:155px!important;
+  }
+
+  body.sfm-logo-fix .sfm-logo-main{
+    font-size:25px!important;
+  }
+
+  body.sfm-logo-fix .sfm-logo-market{
+    margin-top:6px!important;
+    font-size:7px!important;
+    padding:4px 6px 3px!important;
+  }
+
+  body.sfm-logo-fix .sfm-logo-est{
+    margin-top:6px!important;
+    font-size:7px!important;
+  }
+
+  body.sfm-logo-fix .hero-bottom .btn{
+    min-height:48px!important;
+    padding:0 18px!important;
+  }
+}

@@ -1,22 +1,26 @@
 
-# STOCK & FOUND MARKET — NO STANDALONE 88
+# STOCK & FOUND MARKET — LOGO FIX
 
-Nuova regola di brand:
+Corregge i problemi visibili nello screenshot:
 
-- NO standalone "88"
-- SI "EST. 1988"
-- il nome è STOCK & FOUND MARKET
-- 1988 resta come dato storico/origine
-- niente "S&F / 88", "FND.088", "ARCHIVE 88", grandi 88 decorativi.
+1. elimina il vecchio MARKET posizionato sotto EST. 1988;
+2. crea un lockup controllato:
+   STOCK & FOUND
+          MARKET
+   EST. 1988
+3. sistema il CTA Hero che appariva come un rettangolo enorme;
+4. neutralizza il vecchio blocco teal della Home.
+
+Il brand resta:
+STOCK & FOUND MARKET
+EST. 1988
 
 Installazione:
 
 cd ~/storage/downloads/StockAndFound88
-unzip -o STOCK-AND-FOUND-MARKET-NO-88.zip
-sed -i 's#</head>#<link rel="stylesheet" href="no-88.css?v=93.1"></head>#' index.html
-sed -i 's#</body>#<script src="js/no-88.js?v=93.1"></script></body>#' index.html
+unzip -o STOCK-AND-FOUND-MARKET-LOGO-FIX.zip
+sed -i 's#</head>#<link rel="stylesheet" href="logo-fix.css?v=94.1"></head>#' index.html
+sed -i 's#</body>#<script src="js/logo-fix.js?v=94.1"></script></body>#' index.html
 git add .
-git commit -m "Remove standalone 88 brand code"
+git commit -m "Fix Stock and Found Market logo and hero CTA"
 git push origin main
-
-Nota: il codice non rimuove "1988", quindi "EST. 1988" rimane.
