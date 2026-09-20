@@ -1,0 +1,85 @@
+
+/* STOCK & FOUND MARKET — REAL LOGO IMAGE V1 */
+
+:root{
+  --sfm-paper:#f3f2ed;
+  --sfm-black:#080808;
+  --sfm-acid:#d8ff32;
+}
+
+/* Header logo is now the generated brand artwork, not HTML text. */
+body.sfm-real-logo #header .logo,
+body.sfm-real-logo #header .site-logo,
+body.sfm-real-logo #header .brand,
+body.sfm-real-logo header .logo,
+body.sfm-real-logo header .site-logo,
+body.sfm-real-logo header .brand,
+body.sfm-real-logo .logo,
+body.sfm-real-logo .site-logo{
+  width:158px!important;
+  height:76px!important;
+  max-width:158px!important;
+  min-width:158px!important;
+  display:block!important;
+  position:relative!important;
+  overflow:hidden!important;
+  background:var(--sfm-paper)!important;
+  flex:none!important;
+  line-height:0!important;
+  letter-spacing:0!important;
+}
+
+/* Hide any old pseudo-labels. */
+body.sfm-real-logo .logo::before,
+body.sfm-real-logo .logo::after,
+body.sfm-real-logo .site-logo::before,
+body.sfm-real-logo .site-logo::after{
+  content:none!important;
+  display:none!important;
+}
+
+/* Crop the whitespace of the artwork without altering the source image. */
+body.sfm-real-logo .sfm-logo-art{
+  position:absolute!important;
+  width:265%!important;
+  height:265%!important;
+  max-width:none!important;
+  left:-82.5%!important;
+  top:-82.5%!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  display:block!important;
+}
+
+/* Footer can use the same real artwork at a larger, calmer scale. */
+body.sfm-real-logo .sfm-footer-logo{
+  width:240px!important;
+  max-width:65vw!important;
+  height:auto!important;
+  display:block!important;
+  background:var(--sfm-paper)!important;
+}
+
+/* Mobile */
+@media(max-width:900px){
+  body.sfm-real-logo #header .logo,
+  body.sfm-real-logo #header .site-logo,
+  body.sfm-real-logo #header .brand,
+  body.sfm-real-logo header .logo,
+  body.sfm-real-logo header .site-logo,
+  body.sfm-real-logo header .brand,
+  body.sfm-real-logo .logo,
+  body.sfm-real-logo .site-logo{
+    width:142px!important;
+    height:70px!important;
+    max-width:142px!important;
+    min-width:142px!important;
+  }
+
+  body.sfm-real-logo .sfm-logo-art{
+    width:265%!important;
+    height:265%!important;
+    left:-82.5%!important;
+    top:-82.5%!important;
+  }
+}
