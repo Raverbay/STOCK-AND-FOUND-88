@@ -1,0 +1,411 @@
+
+/* STOCK & FOUND 88 — PERSONALITY / ART DIRECTION 01
+   Goal: stop looking like a generic fashion template.
+   This layer introduces a proprietary "market archive" visual language.
+*/
+
+:root{
+  --sf-black:#080808;
+  --sf-paper:#f3f2ed;
+  --sf-acid:#d7ff32;
+  --sf-red:#ff4a2f;
+  --sf-gray:#a7a59e;
+  --sf-rule:#cfcfc7;
+}
+
+html,body{
+  background:var(--sf-paper)!important;
+  color:var(--sf-black)!important;
+  overflow-x:hidden!important;
+}
+
+body.sf-personality{
+  --sf-display:Inter,Arial,sans-serif;
+}
+
+/* ---------- BRAND SIGNATURE ---------- */
+
+body.sf-personality .hero{
+  position:relative!important;
+  isolation:isolate!important;
+}
+
+body.sf-personality .hero::before{
+  content:"S&F / 88";
+  position:absolute;
+  z-index:9;
+  left:20px;
+  top:22px;
+  font:900 10px/1 "DM Mono",monospace;
+  letter-spacing:.12em;
+  mix-blend-mode:difference;
+  color:white;
+}
+
+body.sf-personality .hero::after{
+  content:"FOUND / NOT ORDERED";
+  position:absolute;
+  z-index:9;
+  right:20px;
+  bottom:24px;
+  writing-mode:vertical-rl;
+  transform:rotate(180deg);
+  font:900 9px/1 "DM Mono",monospace;
+  letter-spacing:.16em;
+  mix-blend-mode:difference;
+  color:white;
+}
+
+/* Kill the generic centered-hero feeling */
+body.sf-personality .hero-copy{
+  position:relative!important;
+  z-index:3!important;
+}
+
+body.sf-personality .hero-copy::before{
+  content:"THE MARKET HAS NO ALGORITHM.";
+  display:block;
+  width:max-content;
+  max-width:90%;
+  padding:7px 9px;
+  margin-bottom:24px;
+  background:var(--sf-acid);
+  color:#000;
+  transform:rotate(-1.5deg);
+  font:900 9px/1 "DM Mono",monospace;
+  letter-spacing:.08em;
+}
+
+body.sf-personality .hero-copy p{
+  font-size:clamp(45px,7vw,110px)!important;
+  line-height:.82!important;
+  letter-spacing:-.075em!important;
+  text-transform:uppercase!important;
+}
+
+body.sf-personality .hero-tag{
+  font:900 9px/1.25 "DM Mono",monospace!important;
+  letter-spacing:.1em!important;
+}
+
+/* ---------- MARKET STAMPS ---------- */
+
+body.sf-personality .market-pulse{
+  background:var(--sf-black)!important;
+  color:var(--sf-acid)!important;
+  border:0!important;
+}
+
+body.sf-personality .market-pulse *{
+  color:inherit!important;
+}
+
+body.sf-personality .market-intro{
+  position:relative!important;
+}
+
+body.sf-personality .market-intro::after{
+  content:"NO FEED. JUST FINDS.";
+  display:block;
+  margin-top:18px;
+  font:900 9px/1 "DM Mono",monospace;
+  letter-spacing:.14em;
+}
+
+/* ---------- PRODUCT / FIND CARDS ---------- */
+
+body.sf-personality .market-tile,
+body.sf-personality .market-stall{
+  position:relative!important;
+  overflow:hidden!important;
+}
+
+body.sf-personality .market-tile::before,
+body.sf-personality .market-stall::before{
+  content:"FOUND";
+  position:absolute;
+  z-index:5;
+  top:12px;
+  left:12px;
+  padding:5px 7px;
+  background:var(--sf-acid);
+  color:#000;
+  font:900 8px/1 "DM Mono",monospace;
+  letter-spacing:.12em;
+}
+
+body.sf-personality .market-tile:nth-child(3n)::before,
+body.sf-personality .market-stall:nth-child(3n)::before{
+  content:"LAST LOOK";
+  background:var(--sf-red);
+  color:#fff;
+}
+
+body.sf-personality .market-tile:nth-child(2n)::after,
+body.sf-personality .market-stall:nth-child(2n)::after{
+  content:"88";
+  position:absolute;
+  z-index:4;
+  right:-8px;
+  bottom:-28px;
+  font:900 130px/.7 Inter,Arial,sans-serif;
+  letter-spacing:-.12em;
+  color:rgba(255,255,255,.75);
+  pointer-events:none;
+}
+
+/* ---------- CATEGORY AREA = MARKET MAP ---------- */
+
+body.sf-personality .categories{
+  position:relative!important;
+  background:var(--sf-paper)!important;
+}
+
+body.sf-personality .categories::after{
+  content:"THE TERRITORY / WALK IT";
+  position:absolute;
+  right:20px;
+  top:24px;
+  font:900 9px/1 "DM Mono",monospace;
+  letter-spacing:.13em;
+  color:#77756f;
+}
+
+body.sf-personality .categories a{
+  position:relative!important;
+  min-height:clamp(150px,20vw,300px)!important;
+  transition:none!important;
+}
+
+body.sf-personality .categories a::after{
+  content:"↗";
+  position:absolute;
+  right:14px;
+  bottom:14px;
+  font:400 22px/1 Arial,sans-serif;
+}
+
+body.sf-personality .categories a:nth-child(2){
+  background:#111!important;
+  color:#f3f2ed!important;
+}
+
+body.sf-personality .categories a:nth-child(3){
+  background:var(--sf-acid)!important;
+  color:#000!important;
+}
+
+body.sf-personality .categories a:nth-child(4){
+  transform:translateY(18px);
+}
+
+body.sf-personality .categories a:nth-child(5){
+  transform:translateY(-18px);
+}
+
+/* ---------- BRANDS = FOUND LABELS ---------- */
+
+body.sf-personality .brand-wall{
+  position:relative!important;
+}
+
+body.sf-personality .brand-wall::before{
+  content:"05 / LABELS WE FOUND";
+  font-weight:900!important;
+}
+
+body.sf-personality .brand-grid a:nth-child(1){
+  background:#111!important;
+  color:#fff!important;
+}
+
+body.sf-personality .brand-grid a:nth-child(2){
+  background:var(--sf-acid)!important;
+  color:#000!important;
+}
+
+body.sf-personality .brand-grid a:nth-child(3){
+  background:#f3f2ed!important;
+  color:#000!important;
+}
+
+body.sf-personality .brand-grid a{
+  min-height:clamp(170px,24vw,340px)!important;
+  position:relative!important;
+}
+
+body.sf-personality .brand-grid a:nth-child(2){
+  transform:translateY(14px);
+}
+
+body.sf-personality .brand-grid a:nth-child(3){
+  transform:translateY(-10px);
+}
+
+/* ---------- MARKET STORY = MANIFESTO, NOT STOCK PHOTO ---------- */
+
+body.sf-personality .split{
+  background:#111!important;
+  color:#f3f2ed!important;
+  position:relative!important;
+  isolation:isolate!important;
+}
+
+body.sf-personality .split .copy{
+  position:relative!important;
+}
+
+body.sf-personality .split .copy::after{
+  content:"88";
+  position:absolute;
+  right:-30px;
+  bottom:-55px;
+  font:900 240px/.7 Inter,Arial,sans-serif;
+  letter-spacing:-.14em;
+  color:rgba(255,255,255,.08);
+  z-index:-1;
+}
+
+body.sf-personality .split .copy h2{
+  text-transform:uppercase!important;
+  font-weight:900!important;
+}
+
+body.sf-personality .split .copy h2 em{
+  color:var(--sf-acid)!important;
+  font-style:normal!important;
+}
+
+body.sf-personality .split > :not(.copy){
+  position:relative!important;
+}
+
+body.sf-personality .split > :not(.copy)::before{
+  content:"REAL MARKET / REAL FINDS";
+  position:absolute;
+  z-index:4;
+  left:14px;
+  top:14px;
+  padding:6px 8px;
+  background:var(--sf-paper);
+  color:#111;
+  font:900 8px/1 "DM Mono",monospace;
+  letter-spacing:.1em;
+}
+
+/* ---------- CLOSING ---------- */
+
+body.sf-personality .closing{
+  position:relative!important;
+  background:var(--sf-acid)!important;
+  color:#000!important;
+}
+
+body.sf-personality .closing h2{
+  text-transform:uppercase!important;
+  font-weight:900!important;
+  letter-spacing:-.085em!important;
+}
+
+body.sf-personality .closing h2 em{
+  font-style:normal!important;
+  -webkit-text-stroke:2px #000;
+  color:transparent!important;
+}
+
+body.sf-personality .closing::before{
+  color:#000!important;
+  opacity:1!important;
+}
+
+body.sf-personality .closing::after{
+  color:#000!important;
+  opacity:1!important;
+}
+
+/* ---------- FINDER ---------- */
+
+body.sf-personality .finder-modes{
+  border:2px solid #111!important;
+}
+
+body.sf-personality .finder-mode:hover,
+body.sf-personality .finder-mode.active{
+  background:var(--sf-acid)!important;
+  color:#000!important;
+}
+
+body.sf-personality .finder-surprise{
+  background:#111!important;
+  color:#f3f2ed!important;
+  border:0!important;
+}
+
+/* ---------- MOBILE: KEEP THE CHARACTER, NOT THE DESKTOP SQUEEZED ---------- */
+
+@media(max-width:900px){
+  body.sf-personality .hero::after{
+    right:12px;
+    bottom:18px;
+  }
+
+  body.sf-personality .hero-copy::before{
+    max-width:75%;
+    font-size:8px;
+  }
+
+  body.sf-personality .hero-copy p{
+    font-size:clamp(45px,15vw,76px)!important;
+  }
+
+  body.sf-personality .categories a:nth-child(4),
+  body.sf-personality .categories a:nth-child(5),
+  body.sf-personality .brand-grid a:nth-child(2),
+  body.sf-personality .brand-grid a:nth-child(3){
+    transform:none!important;
+  }
+
+  body.sf-personality .brand-grid{
+    grid-template-columns:1fr!important;
+  }
+
+  body.sf-personality .brand-grid a{
+    min-height:145px!important;
+  }
+
+  body.sf-personality .split{
+    display:flex!important;
+    flex-direction:column!important;
+  }
+
+  body.sf-personality .split .copy{
+    order:1!important;
+    padding:88px 20px 58px!important;
+  }
+
+  body.sf-personality .split > :not(.copy){
+    order:2!important;
+    min-height:330px!important;
+    height:82vw!important;
+  }
+
+  body.sf-personality .closing h2{
+    font-size:clamp(60px,17vw,92px)!important;
+  }
+}
+
+@media(max-width:430px){
+  body.sf-personality .hero-copy::before{
+    margin-bottom:20px;
+  }
+
+  body.sf-personality .market-tile:nth-child(2n)::after,
+  body.sf-personality .market-stall:nth-child(2n)::after{
+    font-size:92px;
+    bottom:-18px;
+  }
+
+  body.sf-personality .split .copy{
+    padding-top:82px!important;
+  }
+}
