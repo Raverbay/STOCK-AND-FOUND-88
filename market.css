@@ -1,0 +1,80 @@
+
+/* STOCK & FOUND 88 — MARKET EXPERIENCE V1
+   A market-inspired interaction layer: discovery, curiosity, choice reduction,
+   progressive disclosure and truthful inventory cues. No fake urgency/social proof.
+*/
+.market-pulse{border-bottom:1px solid var(--line);background:#ebe9e3;overflow:hidden}
+.market-pulse-track{width:max-content;display:flex;gap:34px;padding:10px 0;font:8px 'DM Mono';letter-spacing:.14em;animation:sf88-marquee 32s linear infinite}
+.market-pulse-track b{color:var(--ink)}
+@keyframes sf88-marquee{to{transform:translateX(-35%)}}
+
+.market-intro{padding:clamp(55px,8vw,110px) 0 30px}
+.market-intro-grid{display:grid;grid-template-columns:1fr .65fr;gap:8vw;align-items:end}
+.market-kicker{font:8px 'DM Mono';letter-spacing:.14em;color:var(--muted);margin-bottom:18px}
+.market-intro h2{font-size:clamp(55px,8vw,125px);line-height:.76;letter-spacing:-.09em;margin:0}
+.market-intro h2 em{font-style:normal;color:var(--muted)}
+.market-intro p{font-size:clamp(17px,1.8vw,23px);line-height:1.08;color:var(--muted);margin:0}
+.market-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}
+.market-action{border:1px solid var(--line);padding:12px 14px;font:8px 'DM Mono';letter-spacing:.1em;background:transparent}
+.market-action:hover,.market-action.active{background:var(--ink);color:#fff;border-color:var(--ink)}
+
+.market-table{display:grid;grid-template-columns:1.18fr .82fr;gap:14px;margin-top:28px}
+.market-stall{position:relative;background:#e4e1da;overflow:hidden;min-height:520px}
+.market-stall img{width:100%;height:100%;object-fit:cover;transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+.market-stall:hover img{transform:scale(1.035)}
+.market-stall-copy{position:absolute;left:18px;right:18px;bottom:18px;z-index:2;color:#fff;display:flex;justify-content:space-between;align-items:end;gap:20px}
+.market-stall:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(0,0,0,.7))}
+.market-stall-copy>*{position:relative;z-index:3}
+.market-stall-copy small{font:8px 'DM Mono';letter-spacing:.12em}
+.market-stall-copy strong{display:block;font-size:clamp(25px,3vw,48px);line-height:.85;letter-spacing:-.06em;margin-top:7px}
+.market-stall-copy .price{font:11px 'DM Mono';border:0;padding:0;white-space:nowrap}
+.market-stack{display:grid;grid-template-rows:1fr 1fr;gap:14px}
+.market-tile{position:relative;display:grid;grid-template-columns:1fr 1fr;background:var(--soft);overflow:hidden;min-height:253px}
+.market-tile .tile-copy{padding:22px;display:flex;flex-direction:column;justify-content:space-between}
+.market-tile .tile-copy small{font:8px 'DM Mono';color:var(--muted);letter-spacing:.12em}
+.market-tile .tile-copy strong{font-size:clamp(28px,3vw,52px);line-height:.8;letter-spacing:-.07em}
+.market-tile .tile-copy em{font-style:normal;color:var(--muted)}
+.market-tile img{width:100%;height:100%;object-fit:cover;min-height:100%}
+.market-tile a{font:8px 'DM Mono';letter-spacing:.1em}
+.market-rail{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:14px}
+.market-rail .card .media{aspect-ratio:3/4}
+.market-rail .card:nth-child(2){transform:translateY(18px)}
+.market-rail .card:nth-child(3){transform:translateY(-6px)}
+.market-rail .card:nth-child(4){transform:translateY(12px)}
+
+.hunt-tools{position:sticky;top:76px;z-index:40;background:rgba(244,244,240,.94);backdrop-filter:blur(12px);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-left:calc(-1 * var(--pad));margin-right:calc(-1 * var(--pad));padding:10px var(--pad);display:flex;align-items:center;justify-content:space-between;gap:14px}
+.hunt-tools .chips{display:flex;gap:7px;overflow:auto;scrollbar-width:none}
+.hunt-tools .chips::-webkit-scrollbar{display:none}
+.hunt-chip{white-space:nowrap;border:1px solid var(--line);background:transparent;padding:9px 11px;font:8px 'DM Mono';letter-spacing:.08em}
+.hunt-chip.active,.hunt-chip:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+.shuffle{border:0;background:var(--ink);color:#fff;padding:10px 13px;font:8px 'DM Mono';letter-spacing:.1em;white-space:nowrap}
+.market-empty{padding:80px 0;text-align:center}
+.market-empty strong{display:block;font-size:52px;letter-spacing:-.07em}
+.market-empty span{display:block;margin-top:12px;color:var(--muted);font:9px 'DM Mono'}
+
+.finder-modes{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:30px 0}
+.finder-mode{border:1px solid var(--line);padding:18px;background:transparent;text-align:left;cursor:pointer}
+.finder-mode strong{display:block;font-size:20px;letter-spacing:-.05em}
+.finder-mode small{display:block;margin-top:8px;font:8px/1.4 'DM Mono';color:var(--muted)}
+.finder-mode.active{background:var(--ink);color:#fff;border-color:var(--ink)}
+.finder-mode.active small{color:#aaa69f}
+.finder-surprise{margin-top:12px;width:100%;border:1px dashed var(--muted);background:transparent;padding:16px;font:8px 'DM Mono';letter-spacing:.12em}
+
+.market-proof{border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:30px;display:grid;grid-template-columns:repeat(3,1fr)}
+.market-proof div{padding:18px;border-right:1px solid var(--line)}
+.market-proof div:last-child{border-right:0}
+.market-proof b{display:block;font-size:20px;letter-spacing:-.04em}
+.market-proof small{font:8px 'DM Mono';color:var(--muted);line-height:1.5}
+
+@media(max-width:900px){
+ .market-intro-grid,.market-table{grid-template-columns:1fr}
+ .market-stall{min-height:500px}
+ .market-stack{grid-template-rows:auto auto}
+ .market-rail{grid-template-columns:repeat(2,1fr)}
+ .market-rail .card:nth-child(n){transform:none}
+ .hunt-tools{top:76px}
+ .finder-modes{grid-template-columns:1fr}
+ .market-proof{grid-template-columns:1fr}
+ .market-proof div{border-right:0;border-bottom:1px solid var(--line)}
+ .market-proof div:last-child{border-bottom:0}
+}
