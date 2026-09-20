@@ -1,26 +1,22 @@
 
-# STOCK & FOUND MARKET — HOME V1
+# STOCK & FOUND MARKET — NO STANDALONE 88
 
-Ottimizzazione completa della Home sulla base degli screenshot reali.
+Nuova regola di brand:
 
-## Obiettivi
-- nuovo nome: STOCK & FOUND MARKET;
-- mantenere S&F / 88 come codice di origine;
-- eliminare l'aspetto generico da template;
-- rendere la Home una narrazione unica;
-- correggere i problemi mobile nella parte bassa;
-- eliminare ghost/empty blocks nella Hero;
-- rendere coerente il linguaggio nero / paper / acid green;
-- trasformare il blocco fisico del mercato in un vero capitolo del brand.
+- NO standalone "88"
+- SI "EST. 1988"
+- il nome è STOCK & FOUND MARKET
+- 1988 resta come dato storico/origine
+- niente "S&F / 88", "FND.088", "ARCHIVE 88", grandi 88 decorativi.
 
-## Installazione
+Installazione:
 
-Aggiungere dopo gli altri CSS:
+cd ~/storage/downloads/StockAndFound88
+unzip -o STOCK-AND-FOUND-MARKET-NO-88.zip
+sed -i 's#</head>#<link rel="stylesheet" href="no-88.css?v=93.1"></head>#' index.html
+sed -i 's#</body>#<script src="js/no-88.js?v=93.1"></script></body>#' index.html
+git add .
+git commit -m "Remove standalone 88 brand code"
+git push origin main
 
-<link rel="stylesheet" href="home-market-v1.css?v=92.1">
-
-e prima di </body>:
-
-<script src="js/home-market-v1.js?v=92.1"></script>
-
-Il patch è pensato per index.html.
+Nota: il codice non rimuove "1988", quindi "EST. 1988" rimane.

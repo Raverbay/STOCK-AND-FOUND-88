@@ -1,0 +1,47 @@
+
+/* STOCK & FOUND MARKET — NO STANDALONE 88
+   Rule: 88 disappears as a visual code. EST. 1988 remains.
+*/
+
+body.sfm-no88 .hero::before{
+  content:"S&F MARKET"!important;
+}
+
+body.sfm-no88 .hero::after{
+  content:"BRANDED STOCK · FOUND DIFFERENTLY"!important;
+}
+
+body.sfm-no88 .brand-wall::after{
+  content:"SELECTED / NOT RANDOM"!important;
+}
+
+body.sfm-no88 .split::before{
+  content:"06 / THE PHYSICAL MARKET"!important;
+}
+
+body.sfm-no88 .split::after{
+  content:"MARKET → ONLINE"!important;
+}
+
+body.sfm-no88 .closing::after{
+  content:"KEEP LOOKING"!important;
+}
+
+body.sfm-no88 .hero .sf-found-index,
+body.sfm-no88 .hero .sf88-index,
+body.sfm-no88 [class*="sf88"]{
+  display:none!important;
+}
+
+/* Remove the old giant 88 graphic while preserving EST. 1988 text. */
+body.sfm-no88 .split .copy::after{
+  content:none!important;
+  display:none!important;
+}
+
+/* Old market cards sometimes use 88 as decorative pseudo content. */
+body.sfm-no88 .market-tile:nth-child(2n)::after,
+body.sfm-no88 .market-stall:nth-child(2n)::after{
+  content:none!important;
+  display:none!important;
+}
