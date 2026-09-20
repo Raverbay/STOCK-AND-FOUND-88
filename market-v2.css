@@ -1,0 +1,463 @@
+
+/* STOCK & FOUND 88 — MARKET EXPERIENCE V2
+   Mobile-first art direction + bottom-home responsive repair.
+   Loaded after existing styles/market layers.
+*/
+
+:root{
+  --sf-paper:#f4f4f0;
+  --sf-ink:#0b0b0b;
+  --sf-line:#d7d6cf;
+  --sf-soft:#e8e7e1;
+}
+
+html,body{
+  width:100%!important;
+  max-width:100%!important;
+  overflow-x:hidden!important;
+  background:var(--sf-paper)!important;
+}
+
+body.sf88-market-v2 main{
+  width:100%!important;
+  max-width:none!important;
+  overflow:hidden!important;
+}
+
+/* ---------- GLOBAL RHYTHM ---------- */
+
+body.sf88-market-v2 .categories,
+body.sf88-market-v2 .brand-wall,
+body.sf88-market-v2 .split,
+body.sf88-market-v2 .closing,
+body.sf88-market-v2 .newsletter{
+  position:relative!important;
+  width:100%!important;
+  max-width:none!important;
+  box-sizing:border-box!important;
+}
+
+body.sf88-market-v2 .categories,
+body.sf88-market-v2 .brand-wall{
+  padding-left:20px!important;
+  padding-right:20px!important;
+}
+
+/* ---------- CATEGORY GRID ---------- */
+
+body.sf88-market-v2 .categories{
+  padding-top:clamp(58px,9vw,110px)!important;
+  padding-bottom:clamp(74px,10vw,130px)!important;
+}
+
+body.sf88-market-v2 .categories::before{
+  content:"04 / SHOP THE TERRITORY";
+  display:block;
+  font:700 9px/1.2 "DM Mono",monospace;
+  letter-spacing:.14em;
+  margin-bottom:24px;
+  color:#77756f;
+}
+
+body.sf88-market-v2 .categories .category-grid,
+body.sf88-market-v2 .categories .categories-grid{
+  width:100%!important;
+  max-width:100%!important;
+}
+
+body.sf88-market-v2 .categories a{
+  min-width:0!important;
+  box-sizing:border-box!important;
+}
+
+/* ---------- BRANDS / ARCHIVE ---------- */
+
+body.sf88-market-v2 .brand-wall{
+  padding-top:0!important;
+  padding-bottom:clamp(82px,11vw,140px)!important;
+}
+
+body.sf88-market-v2 .brand-wall::before{
+  content:"05 / SELECTED LABELS";
+  display:block;
+  font:700 9px/1.2 "DM Mono",monospace;
+  letter-spacing:.14em;
+  margin-bottom:28px;
+  color:#77756f;
+}
+
+body.sf88-market-v2 .brand-wall::after{
+  content:"ARCHIVE / 88";
+  position:absolute;
+  top:0;
+  right:20px;
+  font:700 9px/1.2 "DM Mono",monospace;
+  letter-spacing:.14em;
+  color:#77756f;
+}
+
+body.sf88-market-v2 .brand-grid,
+body.sf88-market-v2 .brands-grid{
+  width:100%!important;
+  max-width:100%!important;
+  display:grid!important;
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  gap:0!important;
+  border-top:1px solid var(--sf-line)!important;
+  border-left:1px solid var(--sf-line)!important;
+}
+
+body.sf88-market-v2 .brand-grid>a,
+body.sf88-market-v2 .brands-grid>a,
+body.sf88-market-v2 .brand-grid .brand,
+body.sf88-market-v2 .brands-grid .brand{
+  min-width:0!important;
+  min-height:clamp(180px,22vw,310px)!important;
+  border-right:1px solid var(--sf-line)!important;
+  border-bottom:1px solid var(--sf-line)!important;
+  display:flex!important;
+  flex-direction:column!important;
+  justify-content:space-between!important;
+  box-sizing:border-box!important;
+  padding:18px!important;
+  position:relative!important;
+  overflow:hidden!important;
+}
+
+body.sf88-market-v2 .brand-grid>a::after,
+body.sf88-market-v2 .brands-grid>a::after{
+  content:"↗";
+  position:absolute;
+  left:18px;
+  bottom:16px;
+  font:500 13px/1 Arial,sans-serif;
+  opacity:.55;
+}
+
+body.sf88-market-v2 .brand-grid>a::before,
+body.sf88-market-v2 .brands-grid>a::before{
+  counter-increment:sfbrand;
+  content:"0" counter(sfbrand);
+  position:absolute;
+  top:18px;
+  right:18px;
+  font:700 9px/1 "DM Mono",monospace;
+  color:#77756f;
+}
+
+body.sf88-market-v2 .brand-grid,
+body.sf88-market-v2 .brands-grid{
+  counter-reset:sfbrand;
+}
+
+body.sf88-market-v2 .brand-grid>a:hover,
+body.sf88-market-v2 .brands-grid>a:hover{
+  background:#0b0b0b!important;
+  color:#f4f4f0!important;
+}
+
+body.sf88-market-v2 .brand-grid strong,
+body.sf88-market-v2 .brands-grid strong,
+body.sf88-market-v2 .brand-grid b,
+body.sf88-market-v2 .brands-grid b{
+  font-size:clamp(22px,3.3vw,52px)!important;
+  line-height:.9!important;
+  letter-spacing:-.06em!important;
+  max-width:95%!important;
+}
+
+/* ---------- MARKET STORY ---------- */
+
+body.sf88-market-v2 .split{
+  margin:0!important;
+  min-height:0!important;
+  display:grid!important;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;
+  background:#e8e7e1!important;
+  border-top:1px solid var(--sf-line)!important;
+}
+
+body.sf88-market-v2 .split::before{
+  content:"06 / SINCE 1988";
+  position:absolute;
+  top:24px;
+  left:20px;
+  z-index:5;
+  font:700 9px/1.2 "DM Mono",monospace;
+  letter-spacing:.14em;
+  color:#77756f;
+}
+
+body.sf88-market-v2 .split::after{
+  content:"FND.088  /  MARKET → ONLINE";
+  position:absolute;
+  right:20px;
+  bottom:24px;
+  z-index:5;
+  font:700 9px/1.2 "DM Mono",monospace;
+  letter-spacing:.12em;
+  color:#77756f;
+}
+
+body.sf88-market-v2 .split > *{
+  min-width:0!important;
+}
+
+body.sf88-market-v2 .split .copy{
+  order:1!important;
+  box-sizing:border-box!important;
+  padding:clamp(100px,10vw,150px) clamp(24px,5vw,80px) clamp(70px,8vw,110px)!important;
+  display:flex!important;
+  flex-direction:column!important;
+  justify-content:center!important;
+  position:relative!important;
+}
+
+body.sf88-market-v2 .split .copy::before{
+  content:"WE GO LOOKING.";
+  display:block;
+  font:700 9px/1.2 "DM Mono",monospace;
+  letter-spacing:.14em;
+  margin-bottom:20px;
+  color:#77756f;
+}
+
+body.sf88-market-v2 .split .copy h2{
+  margin:0 0 22px!important;
+  font-size:clamp(52px,7vw,118px)!important;
+  line-height:.82!important;
+  letter-spacing:-.075em!important;
+  text-transform:uppercase!important;
+}
+
+body.sf88-market-v2 .split .copy p{
+  max-width:440px!important;
+  font-size:clamp(14px,1.4vw,18px)!important;
+  line-height:1.45!important;
+}
+
+body.sf88-market-v2 .split .stamp{
+  margin-top:28px!important;
+  font:700 9px/1.4 "DM Mono",monospace!important;
+  letter-spacing:.12em!important;
+  text-transform:uppercase!important;
+}
+
+body.sf88-market-v2 .split > :not(.copy){
+  order:2!important;
+  min-height:clamp(420px,50vw,760px)!important;
+  overflow:hidden!important;
+  position:relative!important;
+}
+
+body.sf88-market-v2 .split img{
+  width:100%!important;
+  height:100%!important;
+  min-height:100%!important;
+  object-fit:cover!important;
+  display:block!important;
+  filter:saturate(.88) contrast(1.02)!important;
+}
+
+/* ---------- CLOSING ---------- */
+
+body.sf88-market-v2 .closing{
+  padding:clamp(90px,13vw,180px) 20px!important;
+  background:#0b0b0b!important;
+  color:#f4f4f0!important;
+  overflow:hidden!important;
+}
+
+body.sf88-market-v2 .closing::before{
+  content:"07 / THE FIND";
+  position:absolute;
+  top:24px;
+  left:20px;
+  font:700 9px/1.2 "DM Mono",monospace;
+  letter-spacing:.14em;
+  opacity:.55;
+}
+
+body.sf88-market-v2 .closing::after{
+  content:"KEEP LOOKING / 88";
+  position:absolute;
+  right:20px;
+  bottom:24px;
+  font:700 9px/1.2 "DM Mono",monospace;
+  letter-spacing:.14em;
+  opacity:.55;
+}
+
+body.sf88-market-v2 .closing h2{
+  max-width:1100px!important;
+  margin:0 auto 26px!important;
+  font-size:clamp(58px,11vw,170px)!important;
+  line-height:.79!important;
+  letter-spacing:-.08em!important;
+  text-transform:uppercase!important;
+}
+
+body.sf88-market-v2 .closing p{
+  max-width:500px!important;
+  margin:0 auto 30px!important;
+  font-size:15px!important;
+  line-height:1.45!important;
+}
+
+body.sf88-market-v2 .closing .btn{
+  margin-top:8px!important;
+}
+
+/* ---------- NEWSLETTER ---------- */
+
+body.sf88-market-v2 .newsletter{
+  padding:clamp(70px,9vw,120px) 20px!important;
+}
+
+body.sf88-market-v2 .newsletter::before{
+  content:"08 / FIND LIST";
+  display:block;
+  margin-bottom:24px;
+  font:700 9px/1.2 "DM Mono",monospace;
+  letter-spacing:.14em;
+  color:#77756f;
+}
+
+body.sf88-market-v2 .newsletter h2{
+  font-size:clamp(46px,7vw,100px)!important;
+  line-height:.84!important;
+  letter-spacing:-.07em!important;
+}
+
+/* ---------- HARD MOBILE REPAIR ---------- */
+
+@media (max-width:900px){
+  body.sf88-market-v2 main,
+  body.sf88-market-v2 main > section{
+    width:100%!important;
+    max-width:100%!important;
+    margin-left:0!important;
+    margin-right:0!important;
+    box-sizing:border-box!important;
+  }
+
+  body.sf88-market-v2 .categories,
+  body.sf88-market-v2 .brand-wall,
+  body.sf88-market-v2 .newsletter{
+    padding-left:20px!important;
+    padding-right:20px!important;
+  }
+
+  body.sf88-market-v2 .brand-wall::after{
+    right:20px;
+  }
+
+  body.sf88-market-v2 .brand-grid,
+  body.sf88-market-v2 .brands-grid{
+    grid-template-columns:1fr!important;
+  }
+
+  body.sf88-market-v2 .brand-grid>a,
+  body.sf88-market-v2 .brands-grid>a,
+  body.sf88-market-v2 .brand-grid .brand,
+  body.sf88-market-v2 .brands-grid .brand{
+    min-height:145px!important;
+    padding:16px!important;
+  }
+
+  body.sf88-market-v2 .brand-grid strong,
+  body.sf88-market-v2 .brands-grid strong,
+  body.sf88-market-v2 .brand-grid b,
+  body.sf88-market-v2 .brands-grid b{
+    font-size:clamp(30px,9vw,46px)!important;
+  }
+
+  body.sf88-market-v2 .split{
+    display:flex!important;
+    flex-direction:column!important;
+  }
+
+  body.sf88-market-v2 .split .copy{
+    order:1!important;
+    min-height:0!important;
+    padding:94px 20px 52px!important;
+  }
+
+  body.sf88-market-v2 .split .copy h2{
+    font-size:clamp(58px,17vw,90px)!important;
+    line-height:.78!important;
+    margin-bottom:22px!important;
+  }
+
+  body.sf88-market-v2 .split .copy p{
+    max-width:330px!important;
+  }
+
+  body.sf88-market-v2 .split > :not(.copy){
+    order:2!important;
+    width:100%!important;
+    min-height:390px!important;
+    height:62vw!important;
+    max-height:520px!important;
+  }
+
+  body.sf88-market-v2 .split img{
+    width:100%!important;
+    height:100%!important;
+    object-fit:cover!important;
+  }
+
+  body.sf88-market-v2 .split::after{
+    bottom:auto;
+    top:calc(94px + 310px);
+    right:20px;
+  }
+
+  body.sf88-market-v2 .closing{
+    padding:90px 20px 100px!important;
+  }
+
+  body.sf88-market-v2 .closing h2{
+    font-size:clamp(60px,17vw,94px)!important;
+    line-height:.78!important;
+  }
+
+  body.sf88-market-v2 .newsletter{
+    padding-top:76px!important;
+    padding-bottom:80px!important;
+  }
+}
+
+@media (max-width:430px){
+  body.sf88-market-v2 .categories{
+    padding-top:54px!important;
+    padding-bottom:72px!important;
+  }
+
+  body.sf88-market-v2 .brand-wall{
+    padding-bottom:74px!important;
+  }
+
+  body.sf88-market-v2 .brand-grid>a,
+  body.sf88-market-v2 .brands-grid>a{
+    min-height:132px!important;
+  }
+
+  body.sf88-market-v2 .split .copy{
+    padding-top:88px!important;
+  }
+
+  body.sf88-market-v2 .split > :not(.copy){
+    min-height:330px!important;
+    height:82vw!important;
+  }
+
+  body.sf88-market-v2 .split::after{
+    top:calc(88px + 265px);
+    font-size:8px;
+  }
+
+  body.sf88-market-v2 .closing{
+    padding-top:82px!important;
+  }
+}
