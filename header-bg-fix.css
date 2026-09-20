@@ -1,0 +1,48 @@
+
+/* STOCK & FOUND MARKET — HEADER BACKGROUND MATCH
+   The generated logo artwork has a background of RGB(239,236,227).
+   Match the entire header to that exact tone so the logo square disappears.
+*/
+
+:root{
+  --sfm-logo-paper:#EFECE3;
+}
+
+/* Header and all of its internal surfaces */
+body.sfm-header-bg-fix #header,
+body.sfm-header-bg-fix header,
+body.sfm-header-bg-fix #header *,
+body.sfm-header-bg-fix header *{
+  --header-bg:var(--sfm-logo-paper);
+}
+
+body.sfm-header-bg-fix #header,
+body.sfm-header-bg-fix header{
+  background:var(--sfm-logo-paper)!important;
+  background-color:var(--sfm-logo-paper)!important;
+}
+
+/* Prevent inherited paper backgrounds from exposing a different tone
+   around the actual logo image. */
+body.sfm-header-bg-fix #header .logo,
+body.sfm-header-bg-fix #header .site-logo,
+body.sfm-header-bg-fix #header .brand,
+body.sfm-header-bg-fix header .logo,
+body.sfm-header-bg-fix header .site-logo,
+body.sfm-header-bg-fix header .brand{
+  background:var(--sfm-logo-paper)!important;
+}
+
+/* Keep the logo image itself unchanged. */
+body.sfm-header-bg-fix .sfm-real-logo-img,
+body.sfm-header-bg-fix .sfm-brand-logo{
+  background:var(--sfm-logo-paper)!important;
+}
+
+/* On mobile the complete header row must use the same tone. */
+@media(max-width:900px){
+  body.sfm-header-bg-fix #header,
+  body.sfm-header-bg-fix header{
+    background-color:var(--sfm-logo-paper)!important;
+  }
+}
