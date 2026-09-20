@@ -3,7 +3,7 @@
   "shortName": "S&F 88",
   "established": "1988",
   "tagline": "BRANDED STOCK. FOUND DIFFERENTLY.",
-  "secondary": "NON CERCHI UN ALTRO CAPO. STAI CERCANDO QUELLO GIUSTO.",
+  "secondary": "WE GO LOOKING. YOU FIND.",
   "brandStory": "DAL MERCATO AL TUO GUARDAROBA.",
   "currency": "EUR",
   "country": "IT",
@@ -15,10 +15,13 @@
     "Accessories"
   ],
   "features": [
-    "New Drop",
-    "Last Piece",
-    "Selected Stock"
+    "Just Found",
+    "Almost Gone",
+    "Under €50",
+    "The Edit",
+    "Finder"
   ],
-  "marketToOnline": true,
-  "status": "concept-demo"
+  "status": "catalog-demo",
+  "pricing_note": "DEMO prices only — replace with verified client inventory pricing before launch.",
+  "image_note": "Reference-led demo imagery; replace with original/authorized images of verified inventory."
 }

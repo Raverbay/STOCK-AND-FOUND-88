@@ -1,0 +1,37 @@
+{
+  "version": "V7.1",
+  "purpose": "Official product pages are visual/product references only. Final imagery must be original or properly authorized and must match real client inventory.",
+  "sources": [
+    {
+      "brand": "Levi's",
+      "url": "https://www.levi.com/IT/it_IT/abbigliamento/uomo/jeans/straight/jeans-501-original/p/005013852"
+    },
+    {
+      "brand": "Levi's",
+      "url": "https://www.levi.com/IT/it_IT/abbigliamento/donna/jeans/straight/jeans-501-original/p/125010554"
+    },
+    {
+      "brand": "Diesel",
+      "url": "https://it.diesel.com/en/man/denim/"
+    },
+    {
+      "brand": "Diesel",
+      "url": "https://it.diesel.com/en/man/footwear/sneakers/"
+    },
+    {
+      "brand": "DSQUARED2",
+      "url": "https://www.dsquared2.com/it/bambino"
+    },
+    {
+      "brand": "DSQUARED2",
+      "url": "https://www.dsquared2.com/it/giacca-imbottita-d2kids-junior/KDQ3232D0ABCDQ90012Y.html"
+    }
+  ],
+  "workflow": [
+    "Verify exact client inventory/model/variant.",
+    "Use the official page as reference for silhouette/material/details.",
+    "Create original imagery; do not simply copy the reference site's photography.",
+    "Replace demo image and price with verified client data.",
+    "Check resale, trademark and image-use rights before launch."
+  ]
+}

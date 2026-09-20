@@ -1,16 +1,18 @@
-# STOCK & FOUND 88 — V5 Personality
+# STOCK & FOUND 88 — V7.1
+Clean storefront rebuild for MediaBay.
 
-Adds a personality layer without rebuilding the commerce engine.
+## Included
+- 5 working pages: Home, Hunt, Product, Finder, Checkout
+- unified navigation/search/menu/cart runtime
+- 23-product research-led demo catalog
+- product reference URLs + image briefs
+- responsive layout
+- Finder filters
+- persistent local demo cart
+- MediaBay attribution
 
-Core voice:
-- WE GO LOOKING. YOU FIND.
-- JUST FOUND.
-- ALMOST GONE.
-- THE HUNT.
-- I'LL TAKE IT.
-- KEEP LOOKING.
-- CLAIM MY FIND.
+## Product imagery
+The catalog uses reference research from official brand pages. These are NOT final commercial images. Create original/authorized images after the exact client inventory is verified.
 
-The layer changes customer-facing language across home, navigation, discovery cards, product, cart, checkout and footer while preserving the existing data/commerce architecture.
-
-This is a front-end personality layer. Payment, real stock synchronization, order persistence and email provider remain separate go-live work.
+## Production blockers
+Payments, order persistence, inventory sync, email, legal/privacy/cookie consent, analytics and real client pricing/inventory must be connected before launch.
