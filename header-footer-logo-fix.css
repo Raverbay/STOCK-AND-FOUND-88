@@ -1,0 +1,175 @@
+
+/* ============================================================
+   STOCK & FOUND MARKET — HEADER / FOOTER LOGO FIX
+   Code-only fix: uses the existing logo artwork, no image edit.
+   ============================================================ */
+
+:root{
+  --sfm-paper:#F3F2ED;
+  --sfm-black:#080808;
+  --sfm-acid:#D8FF32;
+  --sfm-line:#CBC9C1;
+}
+
+/* ---------- ONE HEADER SYSTEM ON EVERY PAGE ---------- */
+
+body.sfm-global-logo #header,
+body.sfm-global-logo header{
+  background:var(--sfm-paper)!important;
+  color:var(--sfm-black)!important;
+  border-bottom:1px solid var(--sfm-line)!important;
+}
+
+body.sfm-global-logo #header .logo,
+body.sfm-global-logo #header .site-logo,
+body.sfm-global-logo #header .brand,
+body.sfm-global-logo header .logo,
+body.sfm-global-logo header .site-logo,
+body.sfm-global-logo header .brand{
+  width:148px!important;
+  height:72px!important;
+  min-width:148px!important;
+  max-width:148px!important;
+  flex:0 0 148px!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  position:relative!important;
+  overflow:hidden!important;
+  background:transparent!important;
+  border:0!important;
+  line-height:0!important;
+}
+
+/* No pseudo text or old MARKET/88 lockups. */
+body.sfm-global-logo .logo::before,
+body.sfm-global-logo .logo::after,
+body.sfm-global-logo .site-logo::before,
+body.sfm-global-logo .site-logo::after,
+body.sfm-global-logo .brand::before,
+body.sfm-global-logo .brand::after{
+  content:none!important;
+  display:none!important;
+}
+
+/* Existing generated artwork: correct aspect ratio, no crop.
+   Multiply makes the paper background visually disappear against
+   the paper header without editing the source image. */
+body.sfm-global-logo .sfm-real-logo-img{
+  width:100%!important;
+  height:100%!important;
+  max-width:none!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  display:block!important;
+  mix-blend-mode:multiply!important;
+  filter:none!important;
+}
+
+/* ---------- INTERNAL PAGES: EXACT SAME HEADER ---------- */
+
+body.sfm-global-logo[data-sfm-page="internal"] #header .logo,
+body.sfm-global-logo[data-sfm-page="internal"] #header .site-logo,
+body.sfm-global-logo[data-sfm-page="internal"] #header .brand,
+body.sfm-global-logo[data-sfm-page="internal"] header .logo,
+body.sfm-global-logo[data-sfm-page="internal"] header .site-logo,
+body.sfm-global-logo[data-sfm-page="internal"] header .brand{
+  width:148px!important;
+  height:72px!important;
+  min-width:148px!important;
+  max-width:148px!important;
+}
+
+/* ---------- FOOTER ---------- */
+
+body.sfm-global-logo #footer,
+body.sfm-global-logo footer{
+  background:var(--sfm-black)!important;
+  color:var(--sfm-paper)!important;
+  border-top:1px solid #252525!important;
+}
+
+body.sfm-global-logo .sfm-footer-logo{
+  width:210px!important;
+  height:auto!important;
+  max-width:70vw!important;
+  display:block!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  /* Same artwork, visually converted for the dark footer.
+     No source image is changed. */
+  filter:invert(1)!important;
+  mix-blend-mode:screen!important;
+  background:transparent!important;
+}
+
+/* Hide duplicate old footer brand text when our image is mounted. */
+body.sfm-global-logo .sfm-footer-brand-copy{
+  display:none!important;
+}
+
+/* ---------- DESKTOP ---------- */
+
+@media(min-width:901px){
+  body.sfm-global-logo #header .logo,
+  body.sfm-global-logo #header .site-logo,
+  body.sfm-global-logo #header .brand,
+  body.sfm-global-logo header .logo,
+  body.sfm-global-logo header .site-logo,
+  body.sfm-global-logo header .brand{
+    width:172px!important;
+    height:78px!important;
+    min-width:172px!important;
+    max-width:172px!important;
+    flex-basis:172px!important;
+  }
+
+  body.sfm-global-logo .sfm-real-logo-img{
+    width:100%!important;
+    height:100%!important;
+  }
+}
+
+/* ---------- MOBILE ---------- */
+
+@media(max-width:900px){
+  body.sfm-global-logo #header .logo,
+  body.sfm-global-logo #header .site-logo,
+  body.sfm-global-logo #header .brand,
+  body.sfm-global-logo header .logo,
+  body.sfm-global-logo header .site-logo,
+  body.sfm-global-logo header .brand{
+    width:142px!important;
+    height:68px!important;
+    min-width:142px!important;
+    max-width:142px!important;
+    flex-basis:142px!important;
+  }
+
+  body.sfm-global-logo .sfm-real-logo-img{
+    width:100%!important;
+    height:100%!important;
+  }
+
+  body.sfm-global-logo .sfm-footer-logo{
+    width:185px!important;
+    max-width:72vw!important;
+  }
+}
+
+/* ---------- EXTRA SMALL DEVICES ---------- */
+
+@media(max-width:380px){
+  body.sfm-global-logo #header .logo,
+  body.sfm-global-logo #header .site-logo,
+  body.sfm-global-logo #header .brand,
+  body.sfm-global-logo header .logo,
+  body.sfm-global-logo header .site-logo,
+  body.sfm-global-logo header .brand{
+    width:128px!important;
+    height:62px!important;
+    min-width:128px!important;
+    max-width:128px!important;
+    flex-basis:128px!important;
+  }
+}
