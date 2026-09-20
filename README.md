@@ -1,28 +1,70 @@
 
-# STOCK & FOUND MARKET — REAL LOGO IMAGE V1
+# STOCK & FOUND MARKET — BRAND SYSTEM V1
 
-Questa versione usa realmente l'immagine generata del logo nel sito.
+Questa è la prima vera brandizzazione trasversale del sito.
 
-File:
-assets/stock-found-market-logo.png
+## BRAND SYSTEM
 
-Il logo viene montato:
-- nell'header;
-- nel footer quando esiste un'area brand compatibile.
-
-La sorgente PNG NON viene modificata.
-Il CSS ritaglia solo lo spazio vuoto dell'immagine per adattarla all'header.
-
-Brand:
+Nome:
 STOCK & FOUND MARKET
+
+Heritage:
 EST. 1988
 
-Installazione:
+Palette:
+BLACK #080808
+PAPER #F3F2ED
+ACID #D8FF32
+RED #FF4A2F (accent secondario, da usare raramente)
 
-cd ~/storage/downloads/StockAndFound88
-unzip -o STOCK-AND-FOUND-MARKET-LOGO-IMAGE-V1.zip
-sed -i 's#</head>#<link rel="stylesheet" href="real-logo.css?v=95.1"></head>#' index.html
-sed -i 's#</body>#<script src="js/real-logo.js?v=95.1"></script></body>#' index.html
-git add .
-git commit -m "Use Stock and Found Market generated logo"
-git push origin main
+Linguaggio:
+- market / archive / editorial
+- tipografia molto grande
+- micro-label mono
+- griglie dure
+- bordi sottili
+- zero rounded cards
+- black / paper / acid
+- nessun teal legacy
+- scarcity solo se reale
+
+## Pagine coperte
+
+- index.html
+- shop.html
+- product.html
+- finder.html
+- checkout.html
+- order-confirmation.html (se presente)
+
+## Cosa fa
+
+- applica palette e tipografia;
+- normalizza bottoni;
+- brandizza header;
+- usa il logo PNG reale;
+- uniforma cards, filtri, product page, finder e checkout;
+- uniforma mobile menu, search e cart;
+- uniforma footer;
+- rimuove i codici 88 isolati;
+- conserva EST. 1988;
+- neutralizza vecchi blocchi teal.
+
+## INSTALLAZIONE
+
+Aggiungere il CSS a tutte le pagine:
+
+<link rel="stylesheet" href="brand-system.css?v=96.1">
+
+e lo script prima di </body>:
+
+<script src="js/brand-system.js?v=96.1"></script>
+
+L'asset deve stare in:
+assets/stock-found-market-logo.png
+
+## NOTA
+
+Questa V1 è una brand layer globale sopra l'engine esistente.
+Il passo successivo, dopo verifica visiva, è incorporare definitivamente i token
+nel CLEAN ENGINE e rimuovere i vecchi patch layer.

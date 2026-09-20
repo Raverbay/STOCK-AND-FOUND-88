@@ -1,0 +1,612 @@
+
+/* ============================================================
+   STOCK & FOUND MARKET — BRAND SYSTEM V1
+   Global visual identity for every page.
+   Brand: STOCK & FOUND MARKET
+   Heritage: EST. 1988
+   ============================================================ */
+
+:root{
+  --sfm-black:#080808;
+  --sfm-paper:#F3F2ED;
+  --sfm-acid:#D8FF32;
+  --sfm-red:#FF4A2F;
+  --sfm-line:#CBC9C1;
+  --sfm-muted:#77756E;
+  --sfm-gray:#A7A59E;
+  --sfm-white:#FFFFFF;
+
+  --sfm-display:Inter,Arial,Helvetica,sans-serif;
+  --sfm-mono:"DM Mono","Roboto Mono",monospace;
+
+  --sfm-radius:0px;
+  --sfm-ease:cubic-bezier(.2,.8,.2,1);
+}
+
+html,
+body{
+  width:100%!important;
+  max-width:100%!important;
+  min-width:0!important;
+  overflow-x:hidden!important;
+  background:var(--sfm-paper)!important;
+  color:var(--sfm-black)!important;
+}
+
+body.sfm-brand{
+  font-family:var(--sfm-display)!important;
+}
+
+/* -------------------- RESET / TYPE -------------------- */
+
+body.sfm-brand *,
+body.sfm-brand *::before,
+body.sfm-brand *::after{
+  border-radius:0!important;
+  box-sizing:border-box;
+}
+
+body.sfm-brand a{
+  color:inherit;
+  text-decoration:none;
+}
+
+body.sfm-brand img{
+  max-width:100%;
+}
+
+body.sfm-brand h1,
+body.sfm-brand h2,
+body.sfm-brand h3,
+body.sfm-brand h4,
+body.sfm-brand p{
+  text-wrap:balance;
+}
+
+body.sfm-brand h1,
+body.sfm-brand h2,
+body.sfm-brand h3{
+  letter-spacing:-.065em;
+}
+
+body.sfm-brand .eyebrow,
+body.sfm-brand .micro,
+body.sfm-brand .label,
+body.sfm-brand small,
+body.sfm-brand .meta,
+body.sfm-brand .product-code{
+  font-family:var(--sfm-mono)!important;
+  letter-spacing:.12em!important;
+  text-transform:uppercase;
+}
+
+/* -------------------- HEADER -------------------- */
+
+body.sfm-brand #header,
+body.sfm-brand header{
+  background:var(--sfm-paper)!important;
+  color:var(--sfm-black)!important;
+  border-bottom:1px solid var(--sfm-line)!important;
+  position:relative;
+  z-index:1000;
+}
+
+body.sfm-brand #header .logo,
+body.sfm-brand #header .site-logo,
+body.sfm-brand #header .brand,
+body.sfm-brand header .logo,
+body.sfm-brand header .site-logo,
+body.sfm-brand header .brand{
+  width:150px!important;
+  height:74px!important;
+  flex:0 0 150px!important;
+  position:relative!important;
+  overflow:hidden!important;
+  background:var(--sfm-paper)!important;
+  line-height:0!important;
+}
+
+body.sfm-brand .sfm-brand-logo{
+  position:absolute!important;
+  width:265%!important;
+  height:265%!important;
+  left:-82.5%!important;
+  top:-82.5%!important;
+  max-width:none!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  display:block!important;
+}
+
+body.sfm-brand .nav a,
+body.sfm-brand .nav button,
+body.sfm-brand #header a,
+body.sfm-brand header a{
+  font-family:var(--sfm-mono)!important;
+  font-size:9px!important;
+  font-weight:700!important;
+  letter-spacing:.12em!important;
+  text-transform:uppercase;
+}
+
+body.sfm-brand #menuBtn,
+body.sfm-brand #searchBtn,
+body.sfm-brand #bagBtn{
+  color:var(--sfm-black)!important;
+}
+
+/* -------------------- GLOBAL BUTTON SYSTEM -------------------- */
+
+body.sfm-brand .btn,
+body.sfm-brand button[type="submit"],
+body.sfm-brand .checkout button,
+body.sfm-brand .finder button{
+  appearance:none!important;
+  border:1px solid var(--sfm-black)!important;
+  background:var(--sfm-black)!important;
+  color:var(--sfm-paper)!important;
+  min-height:50px!important;
+  padding:0 20px!important;
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:7px!important;
+  font-family:var(--sfm-mono)!important;
+  font-size:9px!important;
+  font-weight:900!important;
+  letter-spacing:.1em!important;
+  text-transform:uppercase!important;
+  cursor:pointer;
+  transition:background .2s var(--sfm-ease),color .2s var(--sfm-ease),transform .2s var(--sfm-ease);
+}
+
+body.sfm-brand .btn:hover,
+body.sfm-brand button[type="submit"]:hover{
+  background:var(--sfm-acid)!important;
+  color:#000!important;
+  transform:translateY(-2px);
+}
+
+body.sfm-brand .btn.light{
+  background:var(--sfm-acid)!important;
+  color:#000!important;
+  border-color:var(--sfm-acid)!important;
+}
+
+body.sfm-brand .btn.light:hover{
+  background:var(--sfm-paper)!important;
+  border-color:var(--sfm-paper)!important;
+}
+
+body.sfm-brand .btn.outline,
+body.sfm-brand .secondary{
+  background:transparent!important;
+  color:var(--sfm-black)!important;
+}
+
+/* -------------------- HERO / MAJOR BANDS -------------------- */
+
+body.sfm-brand .hero{
+  background:var(--sfm-black)!important;
+  color:var(--sfm-paper)!important;
+  border:0!important;
+}
+
+body.sfm-brand .hero-copy p{
+  letter-spacing:-.085em!important;
+  font-weight:900!important;
+}
+
+body.sfm-brand .hero-copy p strong,
+body.sfm-brand .hero h1 em,
+body.sfm-brand .hero h2 em{
+  color:var(--sfm-acid)!important;
+}
+
+body.sfm-brand .hero-tag,
+body.sfm-brand .hero .micro{
+  color:rgba(243,242,237,.62)!important;
+}
+
+body.sfm-brand .market-pulse{
+  background:var(--sfm-acid)!important;
+  color:#000!important;
+  border:0!important;
+}
+
+body.sfm-brand .market-pulse *{
+  color:#000!important;
+}
+
+/* Eliminate old teal/blue branding remnants. */
+body.sfm-brand .darkband,
+body.sfm-brand .dark-band{
+  background:var(--sfm-black)!important;
+  color:var(--sfm-paper)!important;
+}
+
+body.sfm-brand [style*="#0f"],
+body.sfm-brand [style*="teal"],
+body.sfm-brand [style*="rgb(15,"]{
+  /* Intentional no-op hook; inline styles are handled in JS where possible. */
+}
+
+/* -------------------- SECTION SYSTEM -------------------- */
+
+body.sfm-brand main > section{
+  width:100%!important;
+  max-width:none!important;
+}
+
+body.sfm-brand .market-intro,
+body.sfm-brand .categories,
+body.sfm-brand .brand-wall,
+body.sfm-brand .newsletter{
+  background:var(--sfm-paper)!important;
+  color:var(--sfm-black)!important;
+}
+
+body.sfm-brand .market-intro::before,
+body.sfm-brand .categories::before,
+body.sfm-brand .brand-wall::before,
+body.sfm-brand .newsletter::before{
+  font-family:var(--sfm-mono)!important;
+  font-size:9px!important;
+  font-weight:900!important;
+  letter-spacing:.14em!important;
+  color:var(--sfm-muted)!important;
+}
+
+/* -------------------- MARKET / PRODUCT CARDS -------------------- */
+
+body.sfm-brand .market-stall,
+body.sfm-brand .market-tile,
+body.sfm-brand .product-card,
+body.sfm-brand .card,
+body.sfm-brand .product{
+  border-color:var(--sfm-line)!important;
+  background:var(--sfm-paper)!important;
+  color:var(--sfm-black)!important;
+}
+
+body.sfm-brand .market-stall:hover,
+body.sfm-brand .market-tile:hover,
+body.sfm-brand .product-card:hover{
+  background:#EAE9E2!important;
+}
+
+body.sfm-brand .market-stall img,
+body.sfm-brand .market-tile img,
+body.sfm-brand .product-card img,
+body.sfm-brand .product img{
+  filter:saturate(.9) contrast(1.02);
+}
+
+body.sfm-brand .badge,
+body.sfm-brand .product-badge,
+body.sfm-brand .tag{
+  background:var(--sfm-acid)!important;
+  color:#000!important;
+  border:0!important;
+  font-family:var(--sfm-mono)!important;
+  font-weight:900!important;
+  letter-spacing:.08em!important;
+}
+
+/* -------------------- SHOP / THE HUNT -------------------- */
+
+body.sfm-brand .shop,
+body.sfm-brand .shop-main,
+body.sfm-brand .products-section{
+  background:var(--sfm-paper)!important;
+}
+
+body.sfm-brand .shop h1,
+body.sfm-brand .hunt-title{
+  font-size:clamp(54px,9vw,140px)!important;
+  line-height:.8!important;
+  letter-spacing:-.085em!important;
+  font-weight:900!important;
+}
+
+body.sfm-brand .filters,
+body.sfm-brand .hunt-tools,
+body.sfm-brand .filterbar{
+  background:var(--sfm-paper)!important;
+  border-color:var(--sfm-line)!important;
+}
+
+body.sfm-brand .hunt-chip,
+body.sfm-brand .filter,
+body.sfm-brand select{
+  border:1px solid var(--sfm-black)!important;
+  background:transparent!important;
+  color:var(--sfm-black)!important;
+  font-family:var(--sfm-mono)!important;
+  font-size:9px!important;
+  font-weight:900!important;
+  letter-spacing:.08em!important;
+  text-transform:uppercase!important;
+}
+
+body.sfm-brand .hunt-chip.active,
+body.sfm-brand .filter.active{
+  background:var(--sfm-black)!important;
+  color:var(--sfm-paper)!important;
+}
+
+/* -------------------- PRODUCT PAGE -------------------- */
+
+body.sfm-brand .product-page,
+body.sfm-brand .product-detail,
+body.sfm-brand .product-info{
+  background:var(--sfm-paper)!important;
+  color:var(--sfm-black)!important;
+}
+
+body.sfm-brand .product-info h1{
+  font-size:clamp(42px,7vw,100px)!important;
+  line-height:.82!important;
+  font-weight:900!important;
+  letter-spacing:-.075em!important;
+}
+
+body.sfm-brand .product-info .price,
+body.sfm-brand .product-price{
+  font-family:var(--sfm-mono)!important;
+  font-weight:900!important;
+}
+
+body.sfm-brand .size,
+body.sfm-brand .size-btn,
+body.sfm-brand .sizes button{
+  background:transparent!important;
+  color:var(--sfm-black)!important;
+  border:1px solid var(--sfm-line)!important;
+  font-family:var(--sfm-mono)!important;
+}
+
+body.sfm-brand .size.selected,
+body.sfm-brand .size-btn.selected,
+body.sfm-brand .sizes button.selected{
+  background:var(--sfm-black)!important;
+  color:var(--sfm-paper)!important;
+  border-color:var(--sfm-black)!important;
+}
+
+body.sfm-brand .note{
+  border-left:3px solid var(--sfm-acid)!important;
+  background:#EAE9E2!important;
+  color:var(--sfm-black)!important;
+}
+
+/* -------------------- FINDER -------------------- */
+
+body.sfm-brand .finder,
+body.sfm-brand .finder-main{
+  background:var(--sfm-paper)!important;
+}
+
+body.sfm-brand .finder-modes{
+  border:1px solid var(--sfm-black)!important;
+}
+
+body.sfm-brand .finder-mode{
+  background:transparent!important;
+  color:var(--sfm-black)!important;
+  border-right:1px solid var(--sfm-black)!important;
+}
+
+body.sfm-brand .finder-mode.active,
+body.sfm-brand .finder-mode:hover{
+  background:var(--sfm-acid)!important;
+  color:#000!important;
+}
+
+body.sfm-brand .finder-surprise{
+  background:var(--sfm-black)!important;
+  color:var(--sfm-paper)!important;
+  border:0!important;
+}
+
+body.sfm-brand .finder input,
+body.sfm-brand .finder select{
+  background:transparent!important;
+  color:var(--sfm-black)!important;
+  border:0!important;
+  border-bottom:1px solid var(--sfm-black)!important;
+  border-radius:0!important;
+}
+
+/* -------------------- CHECKOUT -------------------- */
+
+body.sfm-brand .checkout,
+body.sfm-brand .checkout-page{
+  background:var(--sfm-paper)!important;
+  color:var(--sfm-black)!important;
+}
+
+body.sfm-brand .checkout h1{
+  font-size:clamp(56px,9vw,135px)!important;
+  line-height:.8!important;
+  letter-spacing:-.085em!important;
+  font-weight:900!important;
+}
+
+body.sfm-brand .checkout input,
+body.sfm-brand .checkout textarea,
+body.sfm-brand .checkout select{
+  background:transparent!important;
+  color:var(--sfm-black)!important;
+  border:0!important;
+  border-bottom:1px solid var(--sfm-black)!important;
+  border-radius:0!important;
+  padding:14px 0!important;
+  font-family:var(--sfm-display)!important;
+}
+
+/* -------------------- SEARCH / MOBILE MENU -------------------- */
+
+body.sfm-brand .search-panel{
+  background:var(--sfm-black)!important;
+  color:var(--sfm-paper)!important;
+  border:0!important;
+}
+
+body.sfm-brand .search-panel input{
+  color:var(--sfm-paper)!important;
+  border-color:var(--sfm-paper)!important;
+  background:transparent!important;
+}
+
+body.sfm-brand .mobile-menu{
+  background:var(--sfm-paper)!important;
+  color:var(--sfm-black)!important;
+}
+
+body.sfm-brand .mobile-menu a{
+  font-family:var(--sfm-display)!important;
+  font-weight:900!important;
+  letter-spacing:-.06em!important;
+  border-color:var(--sfm-line)!important;
+}
+
+body.sfm-brand .mobile-menu a:hover{
+  background:var(--sfm-acid)!important;
+}
+
+/* -------------------- CART -------------------- */
+
+body.sfm-brand .cart-drawer,
+body.sfm-brand #cartDrawer{
+  background:var(--sfm-paper)!important;
+  color:var(--sfm-black)!important;
+  border-left:1px solid var(--sfm-black)!important;
+}
+
+body.sfm-brand .carttop,
+body.sfm-brand .cartbottom{
+  border-color:var(--sfm-line)!important;
+}
+
+body.sfm-brand .cartbottom .btn{
+  background:var(--sfm-black)!important;
+  color:var(--sfm-acid)!important;
+}
+
+/* -------------------- STORY / CLOSING -------------------- */
+
+body.sfm-brand .split{
+  background:var(--sfm-black)!important;
+  color:var(--sfm-paper)!important;
+}
+
+body.sfm-brand .split h2 em,
+body.sfm-brand .closing h2 em{
+  color:var(--sfm-acid)!important;
+  font-style:normal!important;
+}
+
+body.sfm-brand .closing{
+  background:var(--sfm-acid)!important;
+  color:#000!important;
+}
+
+body.sfm-brand .closing h2 em{
+  color:transparent!important;
+  -webkit-text-stroke:2px #000!important;
+}
+
+body.sfm-brand .closing .btn{
+  background:#000!important;
+  color:var(--sfm-acid)!important;
+}
+
+/* -------------------- FOOTER -------------------- */
+
+body.sfm-brand footer,
+body.sfm-brand #footer{
+  background:var(--sfm-black)!important;
+  color:var(--sfm-paper)!important;
+  border-top:1px solid #262626!important;
+}
+
+body.sfm-brand footer a,
+body.sfm-brand #footer a{
+  color:var(--sfm-paper)!important;
+}
+
+body.sfm-brand footer .micro,
+body.sfm-brand #footer .micro,
+body.sfm-brand footer small,
+body.sfm-brand #footer small{
+  color:#8C8A83!important;
+}
+
+body.sfm-brand .sfm-footer-logo{
+  width:190px!important;
+  max-width:65vw!important;
+  background:var(--sfm-paper)!important;
+  display:block!important;
+}
+
+/* -------------------- REMOVE LEGACY TEAL -------------------- */
+
+body.sfm-brand .teal,
+body.sfm-brand .blue-band,
+body.sfm-brand .cyan-band{
+  background:var(--sfm-black)!important;
+  color:var(--sfm-paper)!important;
+}
+
+/* -------------------- RESPONSIVE -------------------- */
+
+@media(max-width:900px){
+  body.sfm-brand #header .logo,
+  body.sfm-brand #header .site-logo,
+  body.sfm-brand #header .brand,
+  body.sfm-brand header .logo,
+  body.sfm-brand header .site-logo,
+  body.sfm-brand header .brand{
+    width:138px!important;
+    height:68px!important;
+    flex-basis:138px!important;
+  }
+
+  body.sfm-brand .sfm-brand-logo{
+    width:265%!important;
+    height:265%!important;
+    left:-82.5%!important;
+    top:-82.5%!important;
+  }
+
+  body.sfm-brand .shop h1,
+  body.sfm-brand .hunt-title{
+    font-size:clamp(54px,17vw,90px)!important;
+  }
+
+  body.sfm-brand .product-info h1{
+    font-size:clamp(48px,15vw,82px)!important;
+  }
+
+  body.sfm-brand .finder-modes{
+    display:grid!important;
+    grid-template-columns:1fr!important;
+  }
+
+  body.sfm-brand .finder-mode{
+    border-right:0!important;
+    border-bottom:1px solid var(--sfm-black)!important;
+  }
+
+  body.sfm-brand .checkout h1{
+    font-size:clamp(58px,17vw,92px)!important;
+  }
+}
+
+@media(max-width:430px){
+  body.sfm-brand .btn{
+    min-height:48px!important;
+    padding:0 16px!important;
+  }
+}
