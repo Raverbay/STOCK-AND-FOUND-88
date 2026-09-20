@@ -1,12 +1,3 @@
-V6.1 EMERGENCY FIX
-
-Fixes:
-- mobile page width
-- hero forced to 100% width
-- search panel hidden on load
-- search panel only visible when .open
-- full-screen mobile menu
-- menu links and close button
-- FINDER added to mobile menu
-
-Install from StockAndFound88 repo root.
+V6.2 UNIVERSAL MENU FIX
+Loaded last on every page, including finder.html.
+Uses delegated capture so the menu works even when app.js dynamically renders/re-renders the header.
