@@ -1,31 +1,15 @@
+# Logo Background Fix V2
 
-# STOCK & FOUND MARKET — HEADER BG FIX
+This is a code-only fix.
 
-Correzione esclusivamente CSS/JS.
+The existing `assets/stock-found-market-logo.png` is preserved. The header
+uses `mix-blend-mode: darken` so the light canvas of the logo visually
+disappears into the Stock & Found paper background, while the black logo
+artwork and acid-green detail remain visible.
 
-Il quadrato visibile dietro il logo generato ha, dallo screenshot,
-il colore RGB:
+It also removes any wrapper background/box and keeps the footer treatment
+dark.
 
-239, 236, 227
-#EF ECE3
+Deploy:
 
-Il nuovo header usa esattamente #EFECE3, così il fondo del PNG e il
-fondo dell'header risultano visivamente continui.
-
-Non viene modificata, rigenerata o ritoccata alcuna immagine.
-
-Installazione:
-
-cd ~/storage/downloads/StockAndFound88
-unzip -o STOCK-AND-FOUND-MARKET-HEADER-BG-FIX.zip
-
-for f in index.html shop.html product.html finder.html checkout.html order-confirmation.html; do
-  if [ -f "$f" ]; then
-    sed -i 's#</head>#<link rel="stylesheet" href="header-bg-fix.css?v=98.1"></head>#' "$f"
-    sed -i 's#</body>#<script src="js/header-bg-fix.js?v=98.1"></script></body>#' "$f"
-  fi
-done
-
-git add .
-git commit -m "Match header background to logo artwork"
-git push origin main
+cd ~/storage/downloads/StockAndFound88 && unzip -o STOCK-AND-FOUND-LOGO-BACKGROUND-FIX-V2.zip && for f in index.html shop.html product.html finder.html checkout.html order-confirmation.html; do sed -i 's#</head>#<link rel="stylesheet" href="logo-background-fix-v2.css?v=99.2"></head>#' "$f"; done && git add . && git commit -m "Remove logo background box with brand compositing" && git push origin main

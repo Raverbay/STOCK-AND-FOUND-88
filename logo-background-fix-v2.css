@@ -1,0 +1,65 @@
+
+/* STOCK & FOUND MARKET — LOGO BACKGROUND FIX V2
+   Code-only: the source logo is not redrawn.
+   The light image field is composited away against the header paper.
+*/
+
+/* Header: darken makes the lighter logo canvas disappear into the
+   darker paper background while preserving the black artwork + acid line. */
+body.sfm-global-logo #header .sfm-real-logo-img,
+body.sfm-brand #header .sfm-brand-logo,
+body.sfm-global-logo header .sfm-real-logo-img,
+body.sfm-brand header .sfm-brand-logo{
+  background:transparent!important;
+  mix-blend-mode:darken!important;
+  isolation:isolate;
+  object-fit:contain!important;
+  object-position:center!important;
+}
+
+/* Remove any artificial logo box from all wrappers. */
+body.sfm-global-logo #header .logo,
+body.sfm-global-logo #header .site-logo,
+body.sfm-global-logo #header .brand,
+body.sfm-brand #header .logo,
+body.sfm-brand #header .site-logo,
+body.sfm-brand #header .brand,
+body.sfm-global-logo header .logo,
+body.sfm-global-logo header .site-logo,
+body.sfm-global-logo header .brand{
+  background:transparent!important;
+  box-shadow:none!important;
+  border:0!important;
+}
+
+/* The header itself owns the paper color. */
+body.sfm-global-logo #header,
+body.sfm-brand #header,
+body.sfm-global-logo header,
+body.sfm-brand header{
+  background:#F3F2ED!important;
+}
+
+/* Footer stays genuinely dark; invert the artwork and screen it,
+   so the original light canvas does not become a visible rectangle. */
+body.sfm-global-logo #footer .sfm-footer-logo,
+body.sfm-global-logo footer .sfm-footer-logo{
+  background:transparent!important;
+  filter:invert(1)!important;
+  mix-blend-mode:screen!important;
+  box-shadow:none!important;
+}
+
+/* Prevent old logo helper backgrounds. */
+body.sfm-global-logo .sfm-brand-logo,
+body.sfm-global-logo .sfm-real-logo-img{
+  box-shadow:none!important;
+}
+
+/* Mobile */
+@media(max-width:900px){
+  body.sfm-global-logo #header .sfm-real-logo-img,
+  body.sfm-brand #header .sfm-brand-logo{
+    mix-blend-mode:darken!important;
+  }
+}
